@@ -1,0 +1,27 @@
+{% comment %}
+  Personalized Fit Products Snippet
+  Displays products from product metafield custom.personalized_fit_products
+  Shows only product image with link - 3 items per row
+{% endcomment %}
+
+{%- assign personalized_products = product.metafields.custom.personalized_fit_products.value -%}
+
+{%- if personalized_products -%}
+    <div class="personalized-fit-products">
+        <div class="personalized-fit-products__grid">
+            {%- for personalized_product in personalized_products -%}
+                <a href="{{ personalized_product.url }}" class="personalized-fit-products__item">
+                    {%- if personalized_product.featured_image -%}
+                        <div class="personalized-fit-products__image">
+                            <img src="{{ personalized_product.featured_image | image_url: width: 400 }}" alt="{{ personalized_product.featured_image.alt | escape }}" loading="lazy" width="400" height="400">
+                        </div>
+                    {%- else -%}
+                        <div class="personalized-fit-products__image personalized-fit-products__image--placeholder">
+                            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                        </div>
+                    {%- endif %}
+                </a>
+            {%- endfor -%}
+        </div>
+    </div>
+{%- endif -%}

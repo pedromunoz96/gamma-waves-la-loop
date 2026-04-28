@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_with_text_kiVUdG": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "FAQ",
+        "image": "shopify://shop_images/faq-banner.jpg",
+        "image_size": "medium",
+        "title": "FAQ`S",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "ninety",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_iwj9ww": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/faq-img.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>LA LOOP: The Original Hands-Free Solution for Your Glasses</p>",
+        "subheading": "<h4>LA LOOP is Legendary</h4><p>Founded in 1999 in New York City by a visionary female entrepreneur, LA LOOP revolutionized the way we wear glasses.</p><h4>LA LOOP is Patented</h4><p>Our innovative swivel-hinge design allows the necklace to move independently from the LOOP, ensuring your glasses stay secure and stylish.</p><h4>LA LOOP is Global</h4><p>Found in high-end eyewear boutiques across <strong>28 countries</strong>, LA LOOP reaches fashion-forward individuals from <strong>Nigeria to Alaska</strong> and beyond.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_8tBhFY": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/faq-img-02.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-4",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-5",
+        "heading": "",
+        "subheading": "<h4>LA LOOP is Artisanal</h4><p>Our leather pieces are meticulously hand-stitched and finished in a historic mill outside Venice, Italy, while each LOOP is assembled by hand in the USA.</p><h4>LA LOOP is Conscientious</h4><p>We source our beads from certified gemologists who uphold ethical and sustainable practices worldwide.</p><h4>LA LOOP is Family</h4><p>We cherish our partnerships with local, owner-operated businesses—collaboration is at the heart of everything we do.</p><h4>LA LOOP is Good</h4><p>Since launching our <strong>LOOP IN</strong> program in 2019, we've donated thousands of dollars in grants to nonprofits nominated by our Loopers and created opportunities for our community to give back.<br/></p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 100
+      }
+    },
+    "heading_with_link_8T7b3M": {
+      "type": "heading-with-link",
+      "name": "Heading with Link",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "link_text": "",
+        "button_link": "",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "collapsible_content_atNFDt": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_GLgUpY": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Where do you ship?",
+            "answer": "<p>We currently ship to all <strong>50 U.S. states, Puerto Rico, Canada, the UK, the Republic of Ireland, Europe, Asia, and Australia</strong>. Please note that delivery times may be longer for remote areas such as Hawaii, Alaska, Puerto Rico, Canada, and Australia.</p>"
+          }
+        },
+        "accordion_R8rVJq": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "How much will shipping cost?",
+            "answer": "<p>We offer <strong>free standard shipping </strong>on all orders over <strong>$150 </strong>within the continental United States.</p>"
+          }
+        },
+        "accordion_6QbE9G": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "When will my order ship?",
+            "answer": "<ul><li>Orders placed <strong>before 12 PM PST, Monday–Friday</strong>, will ship the same day.</li><li>Expedited shipping is available at an additional cost, depending on your location and order.</li><li>Orders placed after <strong>12 PM PST</strong> or on weekends/holidays will be processed the next business day.</li></ul><p>(Business days are Monday through Friday, excluding U.S. federal holidays.)</p>"
+          }
+        },
+        "accordion_aRWJcn": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "How do I make a return?",
+            "answer": "<p>We offer a <strong>14-day return policy </strong>for purchases made on <strong>laloop.com</strong>. To qualify for a full refund, items must be <strong>unworn </strong>and returned in their <strong>original packaging</strong>.<br/>To start your return, visit <a href=\"https://laloop.returnscenter.com/\" title=\"https://laloop.returnscenter.com/\"><strong>laloop.returnscenter.com</strong></a>.<br/>For assistance, contact us at <strong>+1 310 449 1155 </strong>or <a><strong>hello@laloop.com </strong></a>.</p>"
+          }
+        },
+        "accordion_VmL3dW": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "What if my LA LOOP breaks?",
+            "answer": "<p>Every LA LOOP purchased through our website comes with a <strong>1-year warranty</strong>. While issues are rare, we promise to resolve any concerns <strong>quickly and hassle-free</strong>.</p>"
+          }
+        },
+        "accordion_3yHdiW": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "How do I keep my LA LOOP looking its best?",
+            "answer": "<p>Each LA LOOP comes with a <strong>microfiber pouch</strong>, which doubles as a polishing cloth to help maintain its shine. (Sounds like you wear yours daily—so this will come in handy!)</p>"
+          }
+        },
+        "accordion_zcV879": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "How many LA LOOPs are too many?",
+            "answer": "<p>Some Loopers are loyal to one signature style, while others switch things up to match their outfit or mood. <strong>There’s no such thing as too many LA LOOPs—collect away!</strong></p>"
+          }
+        },
+        "accordion_6EQitL": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "My husband constantly loses his glasses. Can LA LOOP help?",
+            "answer": "<p>Absolutely! Start him off with either our <strong>Sport LA LOOP </strong>or a <strong>Classic leather LA LOOP</strong>. And don’t forget to take advantage of our <strong>gift packaging</strong>—your future anniversary celebrations may just thank you for it!</p>"
+          }
+        },
+        "accordion_arbm6V": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "I don’t wear reading glasses. Can I still wear a LA LOOP?",
+            "answer": "<p>Yes! LA LOOP is <strong>perfect for sunglasses, too</strong>.</p>"
+          }
+        },
+        "accordion_GBLRhT": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Which LA LOOP length is right for me?",
+            "answer": "<ul><li>If you prefer your glasses to hang <strong>at the sternum</strong>, choose our <strong>21-inch</strong> length.</li><li>For a slightly longer drop, go for <strong>25 inches</strong>.</li><li>If you love a <strong>longer statement piece</strong>, opt for our <strong>30-inch styles</strong>.</li><li>Our <strong>Langston Adjustable Dog Tag</strong> style offers full adjustability, so you can customize your look.</li></ul><p>If you ever order the wrong length, we’re happy to exchange it!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_GLgUpY",
+        "accordion_R8rVJq",
+        "accordion_6QbE9G",
+        "accordion_aRWJcn",
+        "accordion_VmL3dW",
+        "accordion_3yHdiW",
+        "accordion_zcV879",
+        "accordion_6EQitL",
+        "accordion_arbm6V",
+        "accordion_GBLRhT"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "heading": "",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_VJCC9f": {
+      "type": "rich-text",
+      "blocks": {
+        "text_PWYFjY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Need more help? Contact us at <a><strong>hello@laloop.com</strong></a> or call <strong>+1 310 449 1155</strong>. We’re here to help you find the perfect LOOP!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PWYFjY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "banner_with_text_kiVUdG",
+    "image_with_text_iwj9ww",
+    "image_with_text_8tBhFY",
+    "heading_with_link_8T7b3M",
+    "collapsible_content_atNFDt",
+    "pages",
+    "rich_text_VJCC9f"
+  ]
+}

@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "columns_mobile": "1",
+        "enable_filtering": false,
+        "enable_sorting": false,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_sku": false,
+        "article_show_tags": false,
+        "article_show_date": true,
+        "article_show_author": false,
+        "article_show_desc": false
+      }
+    },
+    "apps_dBpgQh": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_y8JJKr": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_y8JJKr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "apps_dBpgQh"
+  ]
+}

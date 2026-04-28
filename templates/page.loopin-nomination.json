@@ -1,0 +1,147 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_with_text_QMnAar": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "Nominate a Nonprofit",
+        "image": "shopify://shop_images/loopin-nomination-banner.jpg",
+        "image_size": "medium",
+        "title": "Nominate a Nonprofit <br>for 2025 <br>LOOPin Grants",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "ninety",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_HCtjkY": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RUTyNY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>LOOPin is how LA LOOP gives back. Together with LOOPERS—the incredible people who make, wear, and sell our products—we support nonprofits making a difference in their communities.<br/><br/>Over the last five years, LOOPin Grants have supported more than 25 local organizations across the U.S. and Canada. Each one is powered by passionate volunteers who LOOPin with their time, energy, and heart.<br/><br/>Do you know a nonprofit that deserves support?  <br/><br/>Nominate them today—it only takes 5 minutes, and they could be our next LOOPin Grant recipient<br/><br/></p>"
+          }
+        },
+        "subheading_f3KTXp": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Mark your calendar—2025 LOOPin<br> Grantswill be announced on"
+          }
+        },
+        "heading_XyfGH4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Giving Tuesday, December 2<br/></p>",
+            "heading_size": "medium"
+          }
+        },
+        "text_qi6rT3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Together, we’re proving that LOOPin makes a difference</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_RUTyNY",
+        "subheading_f3KTXp",
+        "heading_XyfGH4",
+        "text_qi6rT3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopin-nomination",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "contact_form_MXdbWN": {
+      "type": "contact-form",
+      "disabled": true,
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "<p>Contact Us</p>",
+        "text": "Use the form below to send us a message—our team will respond as quickly as possible.",
+        "additional_text": "<p>Feel free to reach out with any questions or inquiries using the form above.</p>",
+        "margin_top": 100,
+        "margin_bottom": 100
+      }
+    },
+    "1763043302415111df": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_g3LmLy": {
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "SHCRN0R8AZpQD1g_TbviiA",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#EEEEEE",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 500,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Trebuchet MS"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_g3LmLy"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "banner_with_text_QMnAar",
+    "pages",
+    "rich_text_HCtjkY",
+    "contact_form_MXdbWN",
+    "1763043302415111df"
+  ]
+}

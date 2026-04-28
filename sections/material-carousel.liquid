@@ -1,0 +1,219 @@
+{{ 'section-product-carousel.css' | asset_url | stylesheet_tag }}
+<script src='{{ 'product-carousel.js' | asset_url }}' defer='defer'></script>
+{% style %}
+    {% render 'spaced-section' %}
+{% endstyle %}
+
+{%- assign material_types = section.blocks
+        | map: 'type'
+        | uniq
+-%}
+<div class='product-carousel'>
+    <div class='product-carousel__top fullscreen-container'>
+        {%- if section.settings.heading != blank -%}
+            <h2 class='product-carousel__heading display-1'>
+                {{ section.settings.heading }}
+            </h2>
+        {%- endif -%}
+        <div class='product-carousel__btns'>
+            <a type='button' class='button--simple-move button button--with-underline'
+                    {% if section.settings.button_link != blank %}
+                        href='{{ section.settings.button_link.url }}'
+                    {% endif %}
+                    {% if section.settings.button_link == blank %}
+                        aria-disabled='true'
+                    {% endif %}
+            >
+                <span>{{ section.settings.link }}</span>
+            </a>
+            <div class='swiper_btn_container'>
+                <div class='swiper-button-prev swiper-button-prev__prod'>
+                    {% render 'icon-caret-left' %}
+                </div>
+                <div class='swiper-button-next swiper-button-next__prod'>
+                    {% render 'icon-caret-right' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='swiper-container swiper-carousel carousel_change-postion_next' data-loop="{{ section.settings.carousel_loop }}">
+        <div class='product-carousel__wrapper swiper-wrapper' data-count='{{ section.settings.materials_count }}'>
+            {%- for block in section.blocks -%}
+                <div data-type='{{ block.type }}' class='
+						collection-product-card collection-carousel-card swiper-slide lazy
+						quickview{%- if settings.quickview_hover -%}--hover{% endif %}
+						show
+					'
+                        {{ block.shopify_attributes }}
+                >
+                    {% render 'material-card',
+                            image: block.settings.image,
+                            title: block.settings.title,
+                            material_link: block.settings.material_link,
+                            media_size: section.settings.image_ratio,
+                            media_fit: section.settings.image_fit
+                    %}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Shop By Material",
+  "tag": "section",
+  "class": "product-carousel-section",
+  "enabled_on": {
+    "templates": [
+      "*"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Shop By Material",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "materials_count",
+      "min": 3,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "Number of materials to show",
+      "info": "Slide show on desktop only"
+    },
+    {
+      "type": "checkbox",
+      "id": "carousel_loop",
+      "default": false,
+      "label": "Enable carousel loop"
+    },
+    {
+      "type": "header",
+      "content": "Button settings"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "default": "View all",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Image settings"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Landscape"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "square",
+          "label": "Square"
+        }
+      ],
+      "default": "portrait",
+      "label": "Image ratio"
+    },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Image fit",
+      "options": [
+        {
+          "value": "contain",
+          "label": "Contain"
+        },
+        {
+          "value": "cover",
+          "label": "Cover"
+        }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 100,
+      "unit": "px",
+      "label": "Top margin"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 100,
+      "unit": "px",
+      "label": "Bottom margin"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "material",
+      "name": "Material Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Material name"
+        },
+        {
+          "type": "url",
+          "id": "material_link",
+          "label": "Link to material collection",
+          "info": "Link to jewelry material metafield or collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop By Material",
+      "blocks": [
+        {
+          "type": "material"
+        },
+        {
+          "type": "material"
+        },
+        {
+          "type": "material"
+        },
+        {
+          "type": "material"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

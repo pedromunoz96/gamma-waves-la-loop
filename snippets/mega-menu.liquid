@@ -1,0 +1,159 @@
+{% comment %}
+	Renders an header mega menu.
+
+	Accepts:
+	- links: {Array} Menu links
+	- block: {Object} Menu Block Object
+	- collection: {Object} Collection Object
+	- collections: {Array} Collections Array
+	Usage:
+	if menu type is 'mega_menu_collection' :
+		{% render 'mega-menu' links: link.links, %}
+	if menu type is 'mega_menu_only_collection' :
+		{% render 'mega-menu' links: link.links, %}
+	if menu type is 'mega_submenu' :
+		{% render 'mega-menu' links: link.links, %}
+{% endcomment %}
+<span
+	class='header__menu-item list-menu__item list-menu__item-first link'
+	{% if link.current %}
+		aria-current='page'
+	{% endif %}
+	aria-label='{{ link.title | escape }}'
+>
+	<span
+		{%- if link.active %}
+			class='header__active-menu-item'
+		{% endif %}
+		title='{{ link.title | escape }}'
+	>
+		<span>
+			{{ link.title | escape }}
+		</span>
+	</span>
+</span>
+<div class='header-mega-menu color-background-1{% if block.type == 'mega_submenu' %} header-mega-submenu{% endif %}'>
+	<div class='fullscreen-container'>
+		{% if block.type == 'mega_menu_collection' %}
+			<div class='header-mega-menu__wrapper'>
+				<ul class='header-mega-menu__have-submenu__list list-unstyled'>
+					{%- for childlink in links -%}
+						<li>
+							<span class='mega-menu-childlink'>
+								{{- childlink.title | escape -}}
+							</span>
+							<ul class='header-mega-menu__have-submenu__list-submenu list-unstyled'>
+								{%- for grandchildlink in childlink.links -%}
+									<li class='{% if grandchildlink.current %}current-link{% endif %}'>
+										<a
+											{% if grandchildlink.type == 'http_link'
+												and settings.open_new_tab
+											%}
+												target='_blank'
+											{% endif %}
+											href='{{ grandchildlink.url }}'
+											class='link line-link'
+										>
+											<span>{{- grandchildlink.title | escape -}}</span>
+										</a>
+									</li>
+								{%- endfor -%}
+							</ul>
+						</li>
+					{%- endfor -%}
+				</ul>
+				{% if block.settings.collection != blank %}
+					<div
+						class='header-mega-menu__card   collection-product-card'
+						id='menu__card-{{ block.id }}'
+					>
+						{% if block.type == 'mega_menu_collection' %}
+							{%- for collection in block.settings.collection -%}
+								<div class='collections-grid__card color-background-4 {% if block.settings.image_ratio == 'portrait' %} collections-grid__card--portrait {% endif %}'>
+									{% render 'collection-card',
+										block_collection: collection,
+										media_size: 'square',
+										url: collection.url,
+										collection_title: collection.title,
+										collection_image: collection.image,
+										per_row: section.settings.per_row,
+										block_collection_name_show: true,
+										overlay_enable: true
+									%}
+								</div>
+							{%- endfor -%}
+						{% endif %}
+					</div>
+				{% endif %}
+			</div>
+		{% elsif block.type == 'mega_menu_only_collection' %}
+			{% for collection in block.settings.collection_list %}
+				{% assign count = forloop.length %}
+			{% endfor %}
+			<ul
+				class='header-mega-menu__collection-list list-unstyled mega-menu__collection-{{ count }}'
+				id='menu__card-{{ block.id }}'
+			>
+				{% for collection in block.settings.collection_list %}
+					<li class='collections-grid__card color-background-4 {% if block.settings.image_ratio == 'portrait' %} collections-grid__card--portrait {% endif %}'>
+						{% render 'collection-card',
+							block_collection: collection,
+							media_size: 'square',
+							url: collection.url,
+							collection_title: collection.title,
+							collection_image: collection.image,
+							per_row: section.settings.per_row,
+							overlay_enable: true
+						%}
+					</li>
+				{% endfor %}
+			</ul>
+		{%- elsif block.type == 'mega_submenu' -%}
+			<div class='header-mega-submenu__wrapper'>
+				<ul class='header-mega-submenu__child-list header-mega-submenu__child-list--{{ block.settings.columns_per_row }} list-unstyled'>
+					{%- for childlink in links -%}
+						<li class='header-mega-submenu__child-item'>
+							<a
+								{% if childlink.type == 'http_link'
+									and settings.open_new_tab
+									and childlink.url != '#'
+								%}
+									target='_blank'
+								{% endif %}
+								{% if childlink.url != '#' %}
+									href='{{ childlink.url }}'
+								{% else %}
+									type='button'
+								{% endif %}
+								class='link line-link header-mega-submenu__child-link{% if childlink.url == '#' %} header-mega-submenu__child-link--disabled{% endif %}'
+								id='{{ childlink.title | handleize | append: '-' | append: childlink.url | append: '-' | append: block.id }}'
+							>
+								<span>{{- childlink.title | escape -}}</span>
+							</a>
+							{%- if childlink.links != blank -%}
+								<ul class='header-mega-submenu__grandchild-list list-unstyled'>
+									{%- for grandchildlink in childlink.links -%}
+										<li class='header-mega-submenu__grandchild-item'>
+											<a
+												{% if grandchildlink.type == 'http_link'
+													and settings.open_new_tab
+												%}
+													target='_blank'
+												{% endif %}
+												href='{{ grandchildlink.url }}'
+												class='link line-link header-mega-submenu__grandchild-link'
+											>
+												<span>{{- grandchildlink.title | escape -}}</span>
+											</a>
+										</li>
+									{%- endfor -%}
+								</ul>
+							{%- endif -%}
+						</li>
+					{%- endfor -%}
+				</ul>
+			</div>
+		{%- endif -%}
+	</div>
+</div>
+<div class='mega-menu_overflow'></div>

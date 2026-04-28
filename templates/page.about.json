@@ -1,0 +1,391 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "banner_with_text_NynaFL": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "ABOUT",
+        "image": "shopify://shop_images/about-banner.jpg",
+        "image_size": "large",
+        "title": "More Than an Accessory — A Loop of Connection and Meaning",
+        "content_text": "<p>A necklace for eyewear, a symbol of connection, a story of impact.</p>",
+        "text_alignment": "center",
+        "content_width": "ninety",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "#",
+        "button_label": "GET INVOLVED",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_dzymhU": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/about-img.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>We Are LA LOOP</p>",
+        "subheading": "<p>In 1999, LA LOOP introduced something entirely new: the necklace for eyewear. What began as a simple idea — to keep glasses close at hand without compromising style — became a patented design that redefined accessories. <br/></p><p>That originality caught the eye of a buyer at the Museum of Modern Art (MoMA) Design Store, who recognized LA LOOP not just as an accessory, but as an invention. From that moment, LA LOOP’s place as a design-driven brand was solidified. What started in Los Angeles quickly grew beyond borders — today, LA LOOP can be found in select stores across 28 countries, connecting a global community of LOOPERS who value accessories that blend style and function. <br/></p><p>More than two decades later, LA LOOP continues to lead with innovation and timeless design, proving that style and function can not only coexist — they can define an entire category.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER OUR CRAFT",
+        "button_link": "#",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "compare_yF64Vp": {
+      "type": "compare",
+      "name": "t:sections.compare.name",
+      "settings": {
+        "custom_class": "our-craft",
+        "color_scheme_compare": "background-5",
+        "image_before": "shopify://shop_images/about-before.jpg",
+        "image_after": "shopify://shop_images/about-after.jpg",
+        "product_list_compare": [],
+        "heading": "<h2>Our Craft</h2><p>At LA LOOP, every detail matters. Each piece starts with intention: What role will it play in someone’s life? How can it blend ease with elegance? </p><p>We source premium materials from trusted makers around the world — supple leathers, modern acetate, sterling and plated silver, luminous gold, and hand-strung beads in vibrant textures. </p><p>Each design is brought to life with our patented swiveling hinges, engineered to hold eyewear securely while offering effortless comfort. </p><p>Our artisans bring decades of skill to every step, from meticulous hand-finishing to precision assembly. The result is jewelry you live in — timeless, durable, and designed to move with you, day after day.</p>",
+        "subheading_left_top": "BEFORE/AFTER",
+        "subheading_right_top": "",
+        "button_text": "SHOP ALL",
+        "button_link": "shopify://collections",
+        "button_style": "link",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_YUrUJz": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/about-img-02.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Our Founder</p>",
+        "subheading": "<p><strong>“I’ve always been about connection.” — Elizabeth Faraut </strong><br/></p><p>When Elizabeth Faraut launched LA LOOP, she wasn’t trying to follow trends — she was creating something the world hadn’t seen before. With her background in fashion and her eye for clean, functional design, she invented a way to turn eyewear into jewelry.<br/></p><p>For Elizabeth, LA LOOP has always been more than an accessory. It’s a symbol of connection — connecting fashion and function, craftsmanship and community, people and purpose. From the very beginning, she believed that an accessory could do more than complete an outfit; it could carry meaning, spark conversation, and even create impact in the world. <br/></p><p>Today, Elizabeth’s vision continues to guide the brand. LA LOOP is not just about keeping your glasses close — it’s about keeping connection close.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "",
+        "button_link": "#",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_BJk4gD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Tb4DJq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Style with Purpose</p>",
+            "heading_size": "large"
+          }
+        },
+        "text_B6U9en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2020, we launched LOOP IN, our social good platform connecting LOOPERS with opportunities to give back. Through our annual Grant Program, we support nonprofits championed by the Looper Community. Our mission is simple: to inspire LOOPERS to help make the world better, one act at a time.</p>"
+          }
+        },
+        "button_8xAThk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More About LOOP in",
+            "button_link": "shopify://pages/community",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Tb4DJq",
+        "text_B6U9en",
+        "button_8xAThk"
+      ],
+      "custom_css": [
+        ".rich-text__text {max-width: 740px; margin-left: auto; margin-right: auto;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "text_cards_carousel_pAinXH": {
+      "type": "text-cards-carousel",
+      "blocks": {
+        "text_card_aBjXnJ": {
+          "type": "text_card",
+          "settings": {
+            "year": "1999",
+            "title": "LA LOOP is Invented",
+            "description": "<p>What began as a simple idea — a necklace that could keep glasses secure — quickly evolved into a patented innovation. That first prototype didn't just solve a problem; it launched an entirely new category of accessory, merging modern design with everyday function and redefining how people wear eyewear.</p>"
+          }
+        },
+        "text_card_ggBR7E": {
+          "type": "text_card",
+          "settings": {
+            "year": "2000",
+            "title": "Featured at MOMA",
+            "description": "<p>LA LOOP was discovered by a buyer at the Museum of Modern Art, who recognized it as a true design innovation and introduced it at the MoMA Design Store. That pivotal moment launched our wholesale distribution, beginning with Bergdorf Goodman and soon expanding to other leading retailers worldwide. From there, LA LOOP grew from a singular invention into a global brand.</p>"
+          }
+        },
+        "text_card_NicCBK": {
+          "type": "text_card",
+          "settings": {
+            "year": "2002",
+            "title": "NYT Spotlight",
+            "description": "<p>The New York Times named LA LOOP “what every mother needs this Mother’s Day,” directing readers to Robert Marc’s New York boutique to purchase. Within one week, Robert Marc sold 1,000 pieces—catapulting LA LOOP into the fashion spotlight and cementing its place as a must-have accessory.</p>"
+          }
+        },
+        "text_card_wnfGTM": {
+          "type": "text_card",
+          "settings": {
+            "year": "2007–2010",
+            "title": "Gift & Fashion Store Growth",
+            "description": "<p>During this period, LA LOOP expanded globally into top gift and fashion boutiques, becoming the perfect complement wherever glasses were sold. By partnering with retailers who prioritized storytelling and elevated experiences for their clients, LA LOOP strengthened its presence as both a functional and fashion-forward accessory.</p>"
+          }
+        },
+        "text_card_m7AdTT": {
+          "type": "text_card",
+          "settings": {
+            "year": "2012–2015",
+            "title": "Spotted on Icons",
+            "description": "<p>From rock stars to Hollywood legends, LA LOOP became a staple accessory for tastemakers worldwide. Without gifting or seeding, style icons including Rod Stewart, Andy Garcia, Julia Roberts, John Mellencamp, Peter Frampton, Mario Testino, and many others discovered LA LOOP in boutiques and made it their own.</p>"
+          }
+        },
+        "text_card_aj4MjG": {
+          "type": "text_card",
+          "settings": {
+            "year": " 2018",
+            "title": "NYT Spotlight",
+            "description": "<p>The New York Times named LA LOOP “what every mother needs this Mother’s Day,” directing readers to Robert Marc’s New York boutique to purchase. Within one week, Robert Marc sold 1,000 pieces—catapulting LA LOOP into the fashion spotlight and cementing its place as a must-have accessory.</p>"
+          }
+        },
+        "text_card_xM87EU": {
+          "type": "text_card",
+          "settings": {
+            "year": "2020",
+            "title": "The Invention of LA MASK",
+            "description": "<p>Amid the early days of the pandemic, when leaving the house meant constantly searching for a misplaced mask, Elizabeth created LA MASK as a stylish, functional solution. Sold directly on LA LOOP’s eCommerce platform, it not only met an immediate need but also accelerated the brand’s direct-to-consumer presence more than ever before.</p>"
+          }
+        },
+        "text_card_t8b6fT": {
+          "type": "text_card",
+          "settings": {
+            "year": "2020",
+            "title": "Launch of LOOPin",
+            "description": "<p>With LOOPin, launched in 2020, we transformed our mission of connection into a movement for good. By funding and spotlighting nonprofits nominated by our community, LOOPin continues to inspire impact, one act of giving at a time</p>"
+          }
+        },
+        "text_card_p6RaW9": {
+          "type": "text_card",
+          "settings": {
+            "year": " 2024",
+            "title": "Celebrating 25 Years",
+            "description": "<p>In 2024, LA LOOP proudly celebrated 25 years of redefining functional jewelry. Today, the brand can be found in over 28 countries, recognized for its quality, innovative, and creative designs crafted by skilled artisans. With a community of devoted “Loopers” who share their love of the brand through word of mouth, LA LOOP has grown into a global movement while staying true to its roots.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_card_aBjXnJ",
+        "text_card_ggBR7E",
+        "text_card_NicCBK",
+        "text_card_wnfGTM",
+        "text_card_m7AdTT",
+        "text_card_aj4MjG",
+        "text_card_xM87EU",
+        "text_card_t8b6fT",
+        "text_card_p6RaW9"
+      ],
+      "name": "Text Cards Carousel",
+      "settings": {
+        "color_scheme": "background-5",
+        "heading": "",
+        "cards_count": 3,
+        "carousel_loop": false,
+        "link": "",
+        "button_link": "",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "material_carousel_xrCr7F": {
+      "type": "material-carousel",
+      "name": "Shop By Material",
+      "settings": {
+        "heading": "Community and Testimonials",
+        "materials_count": 4,
+        "carousel_loop": false,
+        "link": "Join the LOOPER Community",
+        "button_link": "shopify://pages/community",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "margin_top": 100,
+        "margin_bottom": 0
+      }
+    },
+    "multicolumn_CPpdkF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6f76br": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/regina.jpg",
+            "heading": "",
+            "text": "“Love this necklace/glasses holder!! Amazing on its own but brilliantly functional. Thank you, LA Loop!”   \n\n<em>Regina</em>",
+            "button_label": "",
+            "button_link": "shopify://pages/testimonials"
+          }
+        },
+        "column_EPR3b7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Heidja.jpg",
+            "heading": "",
+            "text": " ”I have been a \"Looper\" for the last 20 years and give some loops as gifts and recommend the loops to friends and strangers!”  \n<em>Heidja</em>",
+            "button_label": "",
+            "button_link": "shopify://pages/testimonials"
+          }
+        },
+        "column_6DxHcW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/marc.jpg",
+            "heading": "",
+            "text": " ”I wish I knew the number of people who have commented on my La Loops and then actually purchased from you.” \n<em>Marc</em>",
+            "button_label": "",
+            "button_link": "shopify://pages/testimonials"
+          }
+        }
+      },
+      "block_order": [
+        "column_6f76br",
+        "column_EPR3b7",
+        "column_6DxHcW"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "custom_class": "community-testimonials",
+        "color_scheme": "background-1",
+        "multicolumn_to_show": 3,
+        "horizontal_alignment": "center",
+        "heading_size": "medium",
+        "img_size": "large",
+        "img_ratio": "landscape",
+        "object_fit": "cover",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 20
+      }
+    },
+    "banner_with_text_K8iT68": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-bottom-banner",
+        "show_breadcrumbs": false,
+        "breadcrumb_text": "Collections",
+        "video": "shopify://files/videos/LeVAR_LALOOP-bg.mp4",
+        "image_size": "large",
+        "title": "\"LA LOOP is the best tool for the job.\"   - LeVar",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "seventy",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "shopify://pages/community",
+        "button_label": "Discover LOOP in",
+        "button_style": "primary",
+        "margin_top": 50,
+        "margin_bottom": 0
+      }
+    },
+    "apps_pYBJyB": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_XVkKNY": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_XVkKNY"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "pages",
+    "banner_with_text_NynaFL",
+    "image_with_text_dzymhU",
+    "compare_yF64Vp",
+    "image_with_text_YUrUJz",
+    "rich_text_BJk4gD",
+    "text_cards_carousel_pAinXH",
+    "material_carousel_xrCr7F",
+    "multicolumn_CPpdkF",
+    "banner_with_text_K8iT68",
+    "apps_pYBJyB"
+  ]
+}

@@ -1,0 +1,129 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_x8WyFX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_e3iJqE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Wholesale Application</p>",
+            "heading_size": "medium"
+          }
+        },
+        "text_4PMhhT": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_e3iJqE",
+        "text_4PMhhT"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20
+      }
+    },
+    "1765550967b2d591c7": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_CDaUWU": {
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "3aDJvgBlIy2LM7aiu3cWfA",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Arial"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_CDaUWU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "apps_yMYPMp": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_QqLYf3": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_QqLYf3"
+      ],
+      "custom_css": [
+        ".shopify-app-block {margin-top: 5rem;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "pages",
+    "rich_text_x8WyFX",
+    "1765550967b2d591c7",
+    "apps_yMYPMp"
+  ]
+}

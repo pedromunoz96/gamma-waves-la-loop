@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "instagram_collage_VPhJUK": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_BUpTfe": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-01.jpg",
+            "button_link": ""
+          }
+        },
+        "card_QEb3jN": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-02.jpg",
+            "button_link": ""
+          }
+        },
+        "card_Cjwc3c": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-03.jpg",
+            "button_link": ""
+          }
+        },
+        "card_eaPeqJ": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-04.jpg",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_BUpTfe",
+        "card_QEb3jN",
+        "card_Cjwc3c",
+        "card_eaPeqJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "title": "<p>@laloop</p>",
+        "text": "FOLLOW US ON INSTAGRAM",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "GET INSPIRED WITH LALOOP",
+        "button_link": "",
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "banner_with_text_6qej9P": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "Wholesale Landing",
+        "image": "shopify://shop_images/dealership-agreement.jpg",
+        "image_size": "large",
+        "title": "Dealership Agreement",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "sixty",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_rHLjRb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P7hXXP": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Dealership Agreement</p>",
+            "heading_size": "medium"
+          }
+        },
+        "text_KmfH9i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Thank you for your interest in LA LOOP. LA LOOP was born out of necessity in New York City over 20 years ago. I found that after having lost my glasses countless times there was no accessory to keep track of glasses on the market that was stylish and functional. And there and then the seed was planted. A prototype was made, the utility and design patent followed and then I embarked on a journey of seeking out and working with select retailers around the world who catered to a consumer who had an eye for design and well made products. For the last two decades, our retail partners have recongized the power of the incremental sale in LA LOOP - when they show beautiful eyewear to a client they marry it with a matching LA LOOP accessory. And the rest is history.<br/><br/></p>"
+          }
+        },
+        "button_My4FNK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Become a la loop authorized dealer",
+            "button_link": "https://cdn.shopify.com/s/files/1/0334/1353/files/LA_LOOP_DEALERSHIP_AGREEMENT_a1f4bc0c-af52-4934-b2f9-e885f04ebfa4.pdf?v=1742934764",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_P7hXXP",
+        "text_KmfH9i",
+        "button_My4FNK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "dealership-agreement",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "main_lookbook_LEyWEF": {
+      "type": "main-lookbook",
+      "blocks": {
+        "about_blocks_DC4ryd": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Easy Return</h2><p><em>CLICK HERE</em></p>",
+            "heading_link": "https://laloop.com/pages/returns",
+            "block_image": "shopify://shop_images/easy-return-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_DA794x": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Free US Shipping - Orders $150+</h2><p><em>CLICK HERE</em></p>",
+            "heading_link": "https://laloop.com/pages/faq#freeShipping",
+            "block_image": "shopify://shop_images/free-shipping-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_FhtMka": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Handmade</h2><p><em>CLICK HERE</em></p>",
+            "heading_link": "https://laloop.com/pages/faq",
+            "block_image": "shopify://shop_images/handmade-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_nqxUF7": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Gift Packaging</h2><p><em>MAKE SOMEONE'S DAY</em></p>",
+            "heading_link": "https://laloop.com/products/premium-packaging",
+            "block_image": "shopify://shop_images/gift-packaging-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "about_blocks_DC4ryd",
+        "about_blocks_DA794x",
+        "about_blocks_FhtMka",
+        "about_blocks_nqxUF7"
+      ],
+      "custom_css": [
+        ".fullscreen-container {padding: 0;}",
+        ".collection-list .page-header {display: none;}",
+        ".collection-list .collection-product-list {--gap: 0;}",
+        "@media (min-width: 750px) {.collection-list .collection-product-list {--grid-width: calc(100% / var(--per-row)); }}"
+      ],
+      "name": "t:sections.main-lookbook.name",
+      "settings": {
+        "title": "",
+        "per_row": 2,
+        "image_ratio": "square",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter_TwKwjX": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "heading": "Join our LOOPER Community",
+        "newsletter_text": "<p>Sign up & receive 10% off your first order</p>",
+        "button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "pages",
+    "instagram_collage_VPhJUK",
+    "banner_with_text_6qej9P",
+    "rich_text_rHLjRb",
+    "main_lookbook_LEyWEF",
+    "newsletter_TwKwjX"
+  ]
+}

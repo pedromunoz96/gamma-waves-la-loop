@@ -1,0 +1,69 @@
+.card__badge {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0.8rem;
+  right: 0;
+  padding: 0 1.2rem;
+}
+@media (min-width: 576px) {
+  .card__badge {
+    top: 1.6rem;
+    padding: 0 2.4rem;
+  }
+}
+@media (min-width: 576px) {
+  .card__badge.on_sale {
+    top: 1.2rem;
+  }
+  .card__badge.on_sale .card__badge-custom {
+    margin-top: 0.4rem;
+  }
+}
+.card__badge-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.card__badge-standart {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.badge {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-heading-weight);
+  text-transform: var(--font-button-text-transform);
+  word-break: break-word;
+  color: var(--color-badge-icon);
+  background-color: transparent;
+}
+.badge--custom {
+  width: auto;
+  color: rgb(var(--color-badge-custom-text));
+}
+
+.badge-discount {
+  font-size: var(--badge-discount-size);
+  letter-spacing: calc(var(--font-heading-letter-spacing) * 0.1);
+  line-height: 40px;
+  margin: 0;
+}
+
+.badge-text {
+  font-size: var(--badge-icon-size);
+  line-height: 20px;
+}
+
+.card__badge_italic .badge-discount {
+  font-family: var(--font-heading-alt-family);
+  font-style: var(--font-heading-alt-style);
+  font-weight: var(--font-heading-alt-weight);
+}

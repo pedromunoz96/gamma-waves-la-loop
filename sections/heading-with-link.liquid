@@ -1,0 +1,86 @@
+{%- style -%}
+    {% render 'spaced-section' %}
+{%- endstyle -%}
+<div class="heading-link section-{{ section.id }}-padding">
+    <div class="container">
+        <div class="heading-link__wrapper">
+            <div class="heading-link__top">
+                {%- if section.settings.heading != blank -%}
+                    <h2 class="heading-link__heading h2">
+                        {{ section.settings.heading }}
+                    </h2>
+                {%- endif -%}
+                {% if section.settings.link_text != blank %}
+                    <div class="heading-link__btns">
+                        <a type="button" class="button--simple-move button button--with-underline" href="{{ section.settings.button_link }}" aria-label="{{ section.settings.link_text }}">
+                            <span>{{ section.settings.link_text }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Heading with Link",
+  "tag": "section",
+  "class": "heading-link-section",
+  "disabled_on": {
+    "templates": [
+      "password"
+    ],
+    "groups": [
+      "*"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Your heading here",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "default": "Shop Now",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 100,
+      "unit": "px",
+      "label": "Top margin"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 100,
+      "unit": "px",
+      "label": "Bottom margin"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heading with Link"
+    }
+  ]
+}
+{% endschema %}

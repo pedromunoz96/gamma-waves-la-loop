@@ -1,0 +1,90 @@
+<style>
+   :root {
+  	--announcement-height: 40px;
+   }
+  @media screen and (min-width: 576px) {
+  	:root {
+  		--announcement-height: {{ section.settings.height }}px;
+  	}
+  }
+</style>
+
+<div class="announcement-bar {% if section.settings.color_scheme == 'dark' %} theme-dark color-background-5
+ {% endif %}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+	{%- if section.settings.text != blank -%}
+		<div class="announcement-bar__message">
+			{%- if section.settings.image != blank -%}
+				<figure class="announcement-bar__image">
+					<img srcset="{%- if section.settings.image.width >= 25 -%}{{ section.settings.image | img_url: '25x' }} 25w,{%- endif -%}
+							{%- if section.settings.image.width >= 50 -%}{{ section.settings.image | img_url: '50x' }} 50w,{%- endif -%}
+							{%- if section.settings.image.width >= 75 -%}{{ section.settings.image | img_url: '75x' }} 75w,{%- endif -%}"
+							 src="{{ section.settings.image | img_url: '75x' }}"
+							 alt="{{ section.settings.image.alt | escape }}"
+							 loading="lazy"
+							 width="{{ section.settings.image.width }}"
+							 height="{{ section.settings.image.height }}"
+					>
+				</figure>
+			{%- endif -%}
+			<div class="announcement-bar__text">{{ section.settings.text }}</div>
+		</div>
+		{%- if section.settings.link != blank -%}
+			</a>
+		{%- endif -%}
+	{%- endif -%}
+</div>
+
+{% schema %}
+{
+	"name": "t:sections.announcement-bar.name",
+	"class": "section-announcement",
+	"limit": 1,
+	"settings": [
+		{
+			"type": "range",
+			"id": "height",
+			"min": 40,
+			"max": 100,
+			"step": 5,
+			"default": 40,
+			"label": "t:sections.announcement-bar.settings.height.label"
+		},
+		{
+			"type": "select",
+			"id": "color_scheme",
+			"options": [
+				{
+					"value": "dark",
+					"label": "t:sections.split_screen_slideshow.blocks.settings.color_scheme.options__2.label"
+				},
+				{
+					"value": "light",
+					"label": "t:sections.split_screen_slideshow.blocks.settings.color_scheme.options__1.label"
+				}
+			],
+			"default": "light",
+			"label": "t:sections.split_screen_slideshow.blocks.settings.color_scheme.label"
+		},
+		{
+			"type": "richtext",
+			"id": "text",
+			"default":"t:sections.announcement-bar.settings.text.default",
+			"label": "t:sections.announcement-bar.settings.text.label"
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "t:sections.announcement-bar.settings.image.label",
+			"info": "t:sections.announcement-bar.settings.image.info"
+		}
+	],
+	"presets": [
+		{
+			"name": "t:sections.announcement-bar.presets.name"
+		}
+	],
+	"enabled_on": {
+    "groups": ["header"]
+  }
+}
+{% endschema %}

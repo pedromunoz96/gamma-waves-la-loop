@@ -1,0 +1,164 @@
+{% comment %}
+	Renders product variant options
+	Accepts:
+	- product: {Object} product object.
+	- option: {Object} current product_option object.
+	- block: {Object} block object.
+	Usage:
+	{% render 'product-variant-options',
+	  product: product,
+	  option: option,
+	  block: block
+	%}
+{% endcomment %}
+
+{%- liquid
+    assign variants_available_arr = product.variants | map: 'available'
+    assign variants_option1_arr = product.variants | map: 'option1'
+    assign variants_option2_arr = product.variants | map: 'option2'
+    assign variants_option3_arr = product.variants | map: 'option3'
+
+    assign product_form_id = 'product-form-' | append: section.id
+
+    assign is_combined_listing_option = false
+
+    if option.position == 1
+        unless product.metafields.custom.disable_combined_listing.value == true
+            assign is_combined_listing_option = true
+        endunless
+    endif
+-%}
+{%- for value in option.values -%}
+    {%- liquid
+        assign option_disabled = true
+
+        unless is_combined_listing_option
+            for option1_name in variants_option1_arr
+                case option.position
+                    when 1
+                        if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                            assign option_disabled = false
+                        endif
+                    when 2
+                        if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                            assign option_disabled = false
+                        endif
+                    when 3
+                        if option1_name == product.selected_or_first_available_variant.option1 and product.selected_or_first_available_variant.option2 == variants_option2_arr[forloop.index0] and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                            assign option_disabled = false
+                        endif
+                endcase
+            endfor
+        else
+            assign option_disabled = false
+        endunless
+
+        assign color_value = value | downcase
+        assign color_value_custom = color_value
+        if color_value_custom contains '#' or color_value_custom contains 'rgb' or color_value_custom == 'white'
+            assign color_value_custom = color_value
+        elsif settings.custom_color_swatches != blank
+            assign color_value_custom = settings.custom_color_swatches | split: ',' | map: 'strip' | where: 'name', color_value | first
+            if color_value_custom == blank
+                assign color_value_custom = color_value
+            else
+                assign color_value_custom = color_value_custom | split: ':' | last | strip
+            endif
+        endif
+
+    -%}
+
+    {%- if settings.type_color_swatch == 'custom' and color_trigger == name_option -%}
+        <input
+                type="radio"
+                id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ product.id }}"
+                name="{{ option.name }}"
+                value="{{ value | escape }}"
+                {% if option.selected_value == value %}checked="checked" class="color-swatch-selected"{% endif %}
+            {% if option_disabled %}disabled="disabled"{% endif %}
+                {% if no_form_id != true %}
+                    form="{{ product_form_id }}"
+                {% endif %}
+        >
+        <label
+                for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ product.id }}"
+                class="color-swatch"
+                tabindex="0"
+                title="{{ value }}"
+                style="--swatch-color: {{ color_value_custom | remove: '-' }}; border-radius: {{ settings.swatch_border_radius }}px"
+        >
+            <span class="visually-hidden">{{ value -}}</span>
+        </label>
+    {% else %}
+        {%- if block.settings.picker_type == 'button' -%}
+
+            {%- if is_combined_listing_option -%}
+                {% comment %}
+                    CUSTOM LOGIC FOR COMBINED LISTINGS (Option 1)
+                    Renders an <a> tag with href for page redirection.
+                    It is crucial that the App provides 'value.product_url' for this to work.
+                {% endcomment %}
+                <a
+                        href="{{ value.product_url }}"
+                        class="link-hover-line-outer {% if option.selected_value == value %}active{% endif %}"
+                        tabindex="0"
+                        style="text-decoration: none;"
+                >
+                    <span class="">{{ value -}}</span>
+                    <span class="visually-hidden">
+						{% if option.selected_value == value %}
+                            {{- 'products.product.variant_selected' | t -}}
+                        {% else %}
+                            {{- product.title | append: ' link' -}}
+                        {% endif %}
+					</span>
+                </a>
+            {%- else -%}
+                {% comment %}
+                    STANDARD RADIO BUTTON RENDERING (Option 2, 3, etc.)
+                {% endcomment %}
+                <input
+                        type="radio"
+                        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                        name="{{ option.name }}"
+                        value="{{ value | escape }}"
+                        {% if no_form_id != true %}
+                            form="{{ product_form_id }}"
+                        {% endif %}
+                        {% if option.selected_value == value %}
+                            checked class="button--with-underline"
+                        {% endif %}
+                        {% if option_disabled %}
+                            class="disabled"
+                        {% endif %}
+                        aria-label="{{ value | escape }}
+						{%- if option_disabled -%}
+							{{ 'products.product.variant_sold_out_or_unavailable' | t }}
+						{%- else -%}
+							{{ 'products.product.variant_available' | t }}
+						{%- endif -%}"
+                        aria-checked="{% if option.selected_value == value %}true{% else %}false{% endif %}"
+                        {% comment %} FIX: Removed comparison from output tag: aria-checked="{{ option.selected_value == value }}" {% endcomment %}
+                >
+                <label
+                        tabindex="0"
+                        class="link-hover-line-outer"
+                        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                >
+                    <span class="uppercase">{{ value -}}</span>
+                    <span class="visually-hidden">
+						{{- 'products.product.variant_sold_out_or_unavailable' | t -}}
+					</span>
+                </label>
+            {%- endif -%}
+        {%- elsif block.settings.picker_type == 'dropdown' -%}
+            <option
+                    value="{{ value | escape }}"
+                    {% if option.selected_value == value %} selected="selected"{% endif %}
+                    {% if option_disabled %} disabled="disabled"{% endif %}
+            >
+                {{ value }}
+            </option>
+        {%- endif -%}
+    {% endif %}
+{%- endfor -%}

@@ -1,0 +1,102 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "header_color_scheme": "light",
+        "add_word": "Collection",
+        "show_word": true,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "overlay_enable": true,
+        "overlay_opacity": 30
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "custom_grid_layout": "1",
+        "products_per_page": 12,
+        "columns_mobile": "1",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_sku": false,
+        "quickview_show": true,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "image_filter_ratio": "4/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 5
+      }
+    },
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card-text": {
+          "type": "card-text",
+          "settings": {
+            "card-text_description": "<p>A short introduction to your <em>social media</em></p>",
+            "heading_size": "medium",
+            "vertical_settings": "end",
+            "horizontal_settings": "left",
+            "color_scheme_2": "background-5"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card-text"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "<p><em>@mon</em>aco</p>",
+        "text": "Follow Us On Instagram",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "get inspired with @monaco",
+        "button_link": "",
+        "padding_top": 130,
+        "padding_bottom": 160,
+        "margin_top": 140,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "instagram-collage"
+  ]
+}

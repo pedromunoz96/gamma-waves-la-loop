@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_cart_note": true,
+        "padding_top": 25,
+        "padding_bottom": 12,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "7d4b6b85-4dbc-4084-9619-80f9531c0e9d": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "<p>Recommended <em>Products</em></p>",
+        "product_list": [],
+        "products_count": 4,
+        "carousel_loop": false,
+        "link": "Shop All",
+        "button_link": "",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": true,
+        "show_sku": false,
+        "quickview_show": false,
+        "show_link_carousel": false,
+        "margin_top": 140,
+        "margin_bottom": 0
+      }
+    },
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card-text": {
+          "type": "card-text",
+          "settings": {
+            "card-text_description": "<p>A short introduction to your <em>social media</em></p>",
+            "heading_size": "medium",
+            "vertical_settings": "end",
+            "horizontal_settings": "left",
+            "color_scheme_2": "background-5"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card-text"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "<p><em>@mon</em>aco</p>",
+        "text": "Follow Us On Instagram",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "get inspired with @monaco",
+        "button_link": "",
+        "padding_top": 130,
+        "padding_bottom": 160,
+        "margin_top": 140,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "7d4b6b85-4dbc-4084-9619-80f9531c0e9d",
+    "instagram-collage"
+  ]
+}

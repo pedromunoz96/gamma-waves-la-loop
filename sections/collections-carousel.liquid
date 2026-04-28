@@ -1,0 +1,205 @@
+{{ 'section-product-carousel.css' | asset_url | stylesheet_tag }}
+{{ 'main-list-template-collection.css' | asset_url | stylesheet_tag }}
+<script src='{{ 'product-carousel.js' | asset_url }}' defer='defer'></script>
+{% style %}
+    {% render 'spaced-section' %}
+{% endstyle %}
+
+{%- liquid
+    # Get current collection handle if we're on a collection page
+    assign current_collection_handle = collection.handle | default: ''
+
+    # Get all collections and filter out current one and empty collections
+    assign collections_to_show = collections | sort: 'title'
+-%}
+<div class='product-carousel'>
+    <div class='product-carousel__top fullscreen-container'>
+        {%- if section.settings.heading != blank -%}
+            <h2 class='product-carousel__heading display-1'>
+                {{ section.settings.heading }}
+            </h2>
+        {%- endif -%}
+        <div class='product-carousel__btns'>
+            {%- if section.settings.button_link != blank and section.settings.link != blank -%}
+                <a type='button' class='button--simple-move button button--with-underline' href='{{ section.settings.button_link }}'>
+                    <span>{{ section.settings.link }}</span>
+                </a>
+            {%- endif -%}
+            <div class='swiper_btn_container'>
+                <div class='swiper-button-prev swiper-button-prev__prod'>
+                    {% render 'icon-caret-left' %}
+                </div>
+                <div class='swiper-button-next swiper-button-next__prod'>
+                    {% render 'icon-caret-right' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='swiper-container swiper-carousel carousel_change-postion_next' data-loop="{{ section.settings.carousel_loop }}">
+        <div class='product-carousel__wrapper swiper-wrapper' data-count='{{ section.settings.collections_count }}'>
+            {%- for coll in collections_to_show -%}
+                {%- unless coll.handle == current_collection_handle -%}
+                    {%- if coll.metafields.custom.show_in_collections_list.value == true -%}
+                        <div class='
+                                        collection-product-card collection-carousel-card swiper-slide lazy
+                                        quickview{%- if settings.quickview_hover -%}--hover{% endif %}
+                                        show
+                                    '>
+                            <div class='collections-grid__card color-background-4 color-border-1 {{ block_class }} {{ collection_class }} {% if section.settings.image_ratio == 'portrait' or section.settings.image_ratio == 'portrait' %} collections-grid__card--portrait {% endif %}'>
+                                {% render 'collection-card',
+                                        block_collection: coll,
+                                        media_size: section.settings.image_ratio,
+                                        url: coll.url,
+                                        collection_title: coll.title,
+                                        collection_image: coll.featured_image,
+                                        per_row: section.settings.collections_count,
+                                        show_product_count: section.settings.show_product_count
+                                %}
+                            </div>
+                        </div>
+                    {%- endif -%}
+                {%- endunless -%}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Discover More Collections",
+  "tag": "section",
+  "class": "product-carousel-section",
+  "enabled_on": {
+    "templates": [
+      "*"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Discover More Collections",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "collections_count",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "label": "Number of collections to show per slide",
+      "info": "Slide show on desktop only"
+    },
+    {
+      "type": "checkbox",
+      "id": "carousel_loop",
+      "default": false,
+      "label": "Enable carousel loop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_count",
+      "default": true,
+      "label": "Show product count"
+    },
+    {
+      "type": "header",
+      "content": "Button settings"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "default": "View all collections",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link",
+      "info": "Link to collections page"
+    },
+    {
+      "type": "header",
+      "content": "Image settings"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Landscape"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "square",
+          "label": "Square"
+        }
+      ],
+      "default": "portrait",
+      "label": "Image ratio"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.overlay.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "overlay_enable",
+      "default": false,
+      "label": "t:sections.all.overlay.overlay_enable.label"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 10,
+      "max": 90,
+      "default": 10,
+      "unit": "%",
+      "label": "t:sections.all.overlay.overlay_opacity.label"
+    },
+    {
+      "type": "header",
+      "content": "Empty state"
+    },
+    {
+      "type": "text",
+      "id": "empty_message",
+      "default": "No other collections available at the moment.",
+      "label": "Empty collections message"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 80,
+      "unit": "px",
+      "label": "Top margin"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 80,
+      "unit": "px",
+      "label": "Bottom margin"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Discover More Collections"
+    }
+  ]
+}
+{% endschema %}

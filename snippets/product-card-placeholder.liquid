@@ -1,0 +1,61 @@
+{% comment %}
+		Renders a product card placeholder
+		Usage:
+	{% render 'product-card-placeholder' %}
+{% endcomment %}
+
+<div class='card-wrapper product-card-placeholder__wrapper'>
+	<div class='card card--product' tabindex='-1'>
+		<div class='card__inner'>
+			<div
+				class='media media--transparent media--hover-effect'
+				{%- if media_size == 'landscape' -%}
+					style='padding-bottom: 70%;'
+				{%- endif -%}
+				{%- if media_size == 'portrait' -%}
+					style='padding-bottom: 130%;'
+				{%- endif -%}
+				{%- if media_size == 'square' -%}
+					style='padding-bottom: 100%;'
+				{%- endif -%}
+			>
+				{{
+					'product-'
+					| append: index
+					| placeholder_svg_tag: 'placeholder-svg'
+				}}
+			</div>
+		</div>
+	</div>
+
+	<div class='card-information'>
+		<div class='card-information__wrapper'>
+			{%- if show_sku or section.settings.show_sku -%}
+				<p
+					class='card__sku no-js-hidden'
+					role='status'
+				>
+					<span class='visually-hidden'>{{ 'products.product.sku' | t }}:</span>
+					SKU1234
+				</p>
+			{%- endif -%}
+			{%- if show_vendor or section.settings.show_vendor -%}
+				<span class='visually-hidden'>{{ 'accessibility.vendor' | t }}</span>
+				<div class='caption-with-letter-spacing'>
+					{{ 'products.product.vendor' | t }}
+				</div>
+			{%- endif -%}
+			<div class='card-title_info'>
+				<span class='card__title'>
+					{{ 'products.product.product_heading' | t }}
+				</span>
+				{% render 'price' %}
+			</div>
+			{%- if show_desc or section.settings.show_desc -%}
+				<div class='card__description'>
+					{{ 'products.product.product_description' | t }}
+				</div>
+			{%- endif -%}
+		</div>
+	</div>
+</div>

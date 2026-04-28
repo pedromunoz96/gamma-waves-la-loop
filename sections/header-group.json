@@ -1,0 +1,179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "logo-slideshow": {
+      "type": "logo-slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "additional_information": "Highlight a product, category, or special offer",
+            "button_label": "Discover More",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "additional_information": "Highlight a product, category, or special offer",
+            "button_label": "Discover More",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "additional_information": "Highlight a product, category, or special offer",
+            "button_label": "Discover More",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2",
+        "slide-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "logo_width": 100,
+        "block_size": "full-screen",
+        "fixed_section": false,
+        "overlay_enable": true,
+        "overlay_opacity": 40,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "autoplay": true,
+        "hover_autoplay_stop": true,
+        "navigation": true,
+        "pagination": true,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_collection_PHVzDf": {
+          "type": "mega_menu_collection",
+          "settings": {
+            "mega_menu_trigger": "SHOP",
+            "collection": [
+              "signature",
+              "modern",
+              "bold"
+            ]
+          }
+        },
+        "mega_menu_collection_DEkcXd": {
+          "type": "mega_menu_collection",
+          "settings": {
+            "mega_menu_trigger": "Collections",
+            "collection": [
+              "traveler",
+              "best-sellers",
+              "bold"
+            ]
+          }
+        },
+        "mega_menu_collection_ePaeWp": {
+          "type": "mega_menu_collection",
+          "settings": {
+            "mega_menu_trigger": "Community",
+            "collection": [
+              "under-150",
+              "gifts-for-her",
+              "long-loops"
+            ]
+          }
+        },
+        "header-1": {
+          "type": "aside",
+          "disabled": true,
+          "settings": {
+            "menu_2": "",
+            "italic": false,
+            "heading_font": 48,
+            "menu_font": 24,
+            "product_list": [],
+            "info_position": "bottom",
+            "color_scheme": "dark",
+            "show_secondary_image": false,
+            "show_desc": false,
+            "show_sku": false,
+            "show_vendor": false,
+            "quickview_show": false,
+            "show_link_header": true,
+            "menu_3": "main-menu",
+            "phone_number": "+1 250 360 0311",
+            "email_address": "hello@monaco.com",
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_collection_PHVzDf",
+        "mega_menu_collection_DEkcXd",
+        "mega_menu_collection_ePaeWp",
+        "header-1"
+      ],
+      "custom_css": [
+        ".header__icon--search .icon-search {display: none;}"
+      ],
+      "settings": {
+        "height": 90,
+        "font_size": 24,
+        "logo": "shopify://shop_images/lalop-logo.svg",
+        "logo_width": 195,
+        "logo_position": "center",
+        "menu": "new-menu-2025",
+        "enable_fullscreen_menu": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "sticky_header_type": "always",
+        "header_overlay": false,
+        "color_scheme": "light",
+        "enable_search": true,
+        "show_items": false,
+        "product_header": "<p>Products</p>",
+        "product_list_search": [],
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_sku": false,
+        "quickview_show": false,
+        "show_product_btn": false,
+        "show_collection_card": true,
+        "collection_header": "<p>Collections</p>",
+        "collection_list_search": [],
+        "show_articles": true,
+        "article_header": "<p>Articles</p>",
+        "blog": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_btn": true
+      }
+    }
+  },
+  "order": [
+    "logo-slideshow",
+    "header"
+  ]
+}

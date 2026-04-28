@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {}
+    },
+    "d7b46d24-91e1-4aa8-b445-85c4f4724de8": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "<p>Some heading</p>",
+        "product_list": [],
+        "products_count": 4,
+        "link": "Link label",
+        "button_link": "",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": true,
+        "quickview_show": false,
+        "margin_top": 140,
+        "margin_bottom": 0
+      }
+    },
+    "c3fb1766-fa13-4901-86a5-0a2d3168aefe": {
+      "type": "instagram-collage",
+      "blocks": {
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-0": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-1": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-2": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-3": {
+          "type": "card-text",
+          "settings": {
+            "card-text_description": "<p>Some additional information</p>",
+            "vertical_settings": "end",
+            "horizontal_settings": "left",
+            "color_scheme_2": "background-5"
+          }
+        }
+      },
+      "block_order": [
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-0",
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-1",
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-2",
+        "template--17224266875193__c3fb1766-fa13-4901-86a5-0a2d3168aefe-1683117952d5777dd3-3"
+      ],
+      "settings": {
+        "color_scheme": "background-3",
+        "title": "<p>Heading</p>",
+        "text": "Your text",
+        "button_text": "link label",
+        "button_link": "",
+        "padding_top": 130,
+        "padding_bottom": 160,
+        "margin_top": 140,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d7b46d24-91e1-4aa8-b445-85c4f4724de8",
+    "c3fb1766-fa13-4901-86a5-0a2d3168aefe"
+  ]
+}

@@ -1,0 +1,102 @@
+{% comment %}
+	Renders an article card placeholer.
+
+	Accepts:
+	- show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+	- show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+	- show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+	- show_tags: {String} The setting either show the article tags or not. If it's not included it will not show the tags by default
+	- show_excerpt: {String} The setting either show the article excerpt or not. If it's not included it will not show the excerpt by default
+	- show_btn: {String} The setting either show the article button or not. If it's not included it will not show the button by default
+	- placeholder_index: {String} The index of the placeholder card
+
+	Usage:
+	{% render 'article-card-placeholder' %}
+{% endcomment %}
+
+{% liquid
+	assign placeholder_card_index = 1
+
+	if placeholder_index != blank
+		assign placeholder_card_index = placeholder_index
+	endif
+%}
+
+<article class='article'>
+	<div class='article__item'>
+		<div class='article__item--img--content'>
+			{%- if show_image -%}
+				<div class='article__img'>
+					<div class='article__img__container'>
+						{{
+							'blog-apparel-'
+							| append: placeholder_card_index
+							| placeholder_svg_tag: 'placeholder-svg placeholder-svg--filled'
+						}}
+					</div>
+				</div>
+			{%- endif -%}
+			<div class='article__content'>
+				{%- if show_tags -%}
+					<ul class='article__tags'>
+						{% for i in (1..3) %}
+							<li class='article__tag'>
+								<div class='full-unstyled-link'>
+									<span title='tag'>
+										{{- 'general.blog.default_tag' | t }}
+										{{ forloop.index -}}
+									</span>
+								</div>
+							</li>
+							{% if forloop.last == false %}
+								<li class='article__line'></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				{%- endif -%}
+				<h5 class='article__title'>
+					<a href='javasccript:;'>
+						{{- 'sections.featured_blog.onboarding_title' | t -}}
+					</a>
+				</h5>
+				<div class='article__info'>
+					{%- if show_date -%}
+						<span class='article__date'>
+							{{- 'sections.featured_blog.posted_on' | t }}
+							{{- 'now' | time_tag: '%B %d, %Y' -}}
+						</span>
+					{%- endif -%}
+					{%- if show_author and show_date -%}
+						<span class='article__line'></span>
+					{%- endif -%}
+					{%- if show_author -%}
+						<span class='article__auther'>
+							{{- 'general.blog.default_author' | t -}}
+						</span>
+					{%- endif -%}
+				</div>
+				{%- if show_excerpt -%}
+					<p class='article__excerpt'>
+						{{- 'sections.featured_blog.onboarding_content' | t -}}
+					</p>
+				{%- endif -%}
+			</div>
+		</div>
+		<div class='article__item--link--btn'>
+			{%- if show_btn != blank -%}
+				<div
+					class='article__link_btn article__link_btn--disabled'
+					aria-disabled='true'
+				>
+					<div class='button--simple-move button button--with-underline'>
+						<span>{{ 'sections.featured_blog.view_now' | t -}}</span>
+					</div>
+					<div
+						class='button--with-underline'
+						aria-label='{{ "accessibility.article_link" | t }}'
+					></div>
+				</div>
+			{%- endif -%}
+		</div>
+	</div>
+</article>

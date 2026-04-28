@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "custom_css": [
+        ".collection-hero--overlay {padding-top: 3rem; min-height: 47.8rem; padding-bottom: 5rem; margin-bottom: 3.5rem;}",
+        "@media (min-width: 990px) {.collection-hero__title {padding-top: 5rem; }}",
+        ".collection-hero__description p {font-size: 1.6rem; font-weight: 200;}",
+        "@media (max-width: 767px) {.media > img {object-position: 75% 50%;}}"
+      ],
+      "settings": {
+        "show_banner_image": true,
+        "banner_image": "shopify://shop_images/home-footer-banner.jpg",
+        "banner_title": "Our Collections",
+        "banner_description": "<p>Step into the world of LA LOOP—where timeless Signature styles meet sleek Modern designs, versatile Traveler loops, elevated Luxe favorites, handcrafted Artisan accents, and enduring Metals. Each collection is thoughtfully created to honor connection, function, and style, offering the perfect piece for every moment.</p>",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "COLLECTIONS",
+        "show_filter": true,
+        "title": "",
+        "per_row": 3,
+        "sort": "alphabetical_reversed",
+        "image_ratio": "square",
+        "overlay_enable": true,
+        "overlay_opacity": 10,
+        "margin_top": 0,
+        "margin_bottom": 20
+      }
+    },
+    "apps_YCjXYm": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_DHNgip": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_DHNgip"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "apps_YCjXYm"
+  ]
+}

@@ -1,0 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "blog_show_tags": false,
+            "blog_show_excerpt": false,
+            "blog_show_date": true,
+            "blog_show_author": false,
+            "image_height": "large",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": true,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer"
+      ],
+      "settings": {
+        "header_variant": "overlay",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog_title": "Showcase latest posts",
+        "blog": "news",
+        "post_limit": 3,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "show_btn": true,
+        "show_view_all": true,
+        "margin_top": 110,
+        "margin_bottom": 110
+      }
+    },
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_4": {
+          "type": "card-text",
+          "settings": {
+            "card-text_description": "<p>A short introduction to your <em>social media</em></p>",
+            "heading_size": "medium",
+            "vertical_settings": "end",
+            "horizontal_settings": "left",
+            "color_scheme_2": "background-5"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "<p><em>@mon</em>aco</p>",
+        "text": "Follow Us On Instagram",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "get inspired with @monaco",
+        "button_link": "",
+        "padding_top": 130,
+        "padding_bottom": 300,
+        "margin_top": 110,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_blog",
+    "instagram-collage"
+  ]
+}

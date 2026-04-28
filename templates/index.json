@@ -1,0 +1,494 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1eb50d74-a7e2-4c9e-807b-6abd15dcc12b": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text__content-box {max-width: 800px;}",
+        ".banner-with-text__content-block {justify-content: end; padding-bottom: 8rem;}",
+        "h1 {margin-bottom: 0 !important;}",
+        ".banner-with-text__content-block .text {margin-bottom: 0;}",
+        ".banner-with-text img {object-position: 75% 50%;}",
+        "@media (max-width: 599px) {.banner-with-text {--slide-height: calc(75vh - var(--announcement-height)); }}"
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "",
+        "show_breadcrumbs": false,
+        "breadcrumb_text": "Collections",
+        "image": "shopify://shop_images/MrC_Pearls_1.jpg",
+        "image_size": "large",
+        "title": "She'll Never Lose Her Glasses Again",
+        "content_text": "<h3>The Original Necklace for Eyewear. Since 1999.</h3>",
+        "text_alignment": "left",
+        "content_width": "a-half",
+        "overlay_enable": false,
+        "overlay_opacity": 20,
+        "button_link": "shopify://collections/mothers-day",
+        "button_label": "SHOP MOTHER'S DAY",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "material_carousel_xPYDFn": {
+      "type": "material-carousel",
+      "blocks": {
+        "material_xXeq7T": {
+          "type": "material",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8039_edited.jpg",
+            "title": "Leather",
+            "material_link": "shopify://collections/leather-1"
+          }
+        },
+        "material_PxVrhD": {
+          "type": "material",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Stephanie_308-Pearls_7283_WEB_PROOF.jpg",
+            "title": "Beaded",
+            "material_link": "shopify://collections/beaded-loops"
+          }
+        },
+        "material_rfCeez": {
+          "type": "material",
+          "settings": {
+            "image": "shopify://shop_images/Britt_Morgan_Tim_Gil_2653_WEB_FINAL_2.jpg",
+            "title": "Stretch",
+            "material_link": "shopify://collections/stretch-1"
+          }
+        },
+        "material_BbpmWb": {
+          "type": "material",
+          "settings": {
+            "image": "shopify://shop_images/JUDI_WONG_020_R1_sRGB.jpg",
+            "title": "Acetate",
+            "material_link": "shopify://collections/acetate-1"
+          }
+        },
+        "material_NWUzPc": {
+          "type": "material",
+          "settings": {
+            "image": "shopify://shop_images/La_LOOP_Jewelry_FW19_695B_2.jpg",
+            "title": "Sterling Silver",
+            "material_link": "shopify://collections/sterling-silver"
+          }
+        },
+        "material_A3A9da": {
+          "type": "material",
+          "disabled": true,
+          "settings": {
+            "title": "Material name",
+            "material_link": ""
+          }
+        },
+        "material_bn43Te": {
+          "type": "material",
+          "settings": {
+            "image": "shopify://shop_images/LIDA_AHMADY_053_R2_sRGB_HR.jpg",
+            "title": "Gold",
+            "material_link": "shopify://collections/gold-1"
+          }
+        }
+      },
+      "block_order": [
+        "material_xXeq7T",
+        "material_PxVrhD",
+        "material_rfCeez",
+        "material_BbpmWb",
+        "material_NWUzPc",
+        "material_A3A9da",
+        "material_bn43Te"
+      ],
+      "name": "Shop By Material",
+      "settings": {
+        "heading": "Shop By Material",
+        "materials_count": 4,
+        "carousel_loop": false,
+        "link": "SHOP All MATERIALS",
+        "button_link": "shopify://collections",
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "margin_top": 60,
+        "margin_bottom": 60
+      }
+    },
+    "main_lookbook_nU6T89": {
+      "type": "main-lookbook",
+      "blocks": {
+        "about_blocks_8RdyF7": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Everyday Loops</h2><p><em>SHOP EVERYDAY</em></p>",
+            "heading_link": "shopify://collections/everyday",
+            "block_image": "shopify://shop_images/everyday-loops-home.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_CjrqTc": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Bold Loops</h2><p><em>SHOP BOLD</em></p>",
+            "heading_link": "shopify://collections/bold",
+            "block_image": "shopify://shop_images/statement-loops-home.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "about_blocks_8RdyF7",
+        "about_blocks_CjrqTc"
+      ],
+      "custom_css": [
+        ".fullscreen-container {padding: 0;}",
+        ".collection-list .page-header {display: none;}",
+        ".collection-list .collection-product-list {--gap: 0;}",
+        "@media (min-width: 750px) {.collection-list .collection-product-list {--grid-width: calc(100% / var(--per-row)); }}"
+      ],
+      "name": "t:sections.main-lookbook.name",
+      "settings": {
+        "title": "",
+        "per_row": 2,
+        "image_ratio": "square",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "main_lookbook_QKJjRf": {
+      "type": "main-lookbook",
+      "blocks": {
+        "about_blocks_jNCHi8": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Shop Mens</h2><p><em>SHOP FOR MEN</em></p>",
+            "heading_link": "shopify://collections/gifts-for-him",
+            "block_image": "shopify://shop_images/artisan-collection-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "about_blocks_jNCHi8"
+      ],
+      "custom_css": [
+        ".fullscreen-container {padding: 0;}",
+        ".collection-list .page-header {display: none;}",
+        ".collection-list .collection-product-list {--gap: 0; --grid-width: calc(100% / var(--per-row));}"
+      ],
+      "name": "t:sections.main-lookbook.name",
+      "settings": {
+        "title": "",
+        "per_row": 1,
+        "image_ratio": "landscape",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "video_GNkRMx": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "full_width": true,
+        "height": "medium",
+        "video_fit": "cover",
+        "subheading": "Watch our quick intro",
+        "heading": "Shop Artisan Collection",
+        "cover_image": "shopify://shop_images/La_Loop_Pic_11.jpg",
+        "opacity_overlay": 0.5,
+        "video": "shopify://files/videos/La Loop_Commercial.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "autoplay_behavior": "scroll",
+        "video_loop": true,
+        "video_muted": true,
+        "video_controls": false,
+        "description": "",
+        "link_url": "shopify://collections/artisan",
+        "link_new_tab": false,
+        "margin_top": 60,
+        "margin_bottom": 60
+      }
+    },
+    "video_with_text_KHeYhB": {
+      "type": "video-with-text",
+      "name": "Video with text",
+      "settings": {
+        "row-reverse": "row",
+        "video": "shopify://files/videos/laloopin.mp4",
+        "video_size": "large",
+        "heading": "Style with Purpose",
+        "text": "<p>In 2020, we launched LOOP IN—our social good platform—rooted in a simple but powerful idea: when women come together, small actions create meaningful change.</p><p>LOOP IN was created to connect LOOPERS with opportunities to give back—to “loop in” not just through what we wear, but through how we show up for our communities.</p><p>Each year, our LOOPin Grant Program supports nonprofit organizations nominated by our Looper Community—organizations doing vital, often unseen work to uplift, protect, educate, and empower. Thanks to your thoughtful nominations and continued support, we have proudly awarded our most recent LOOPin Grants and celebrated this year’s extraordinary recipients.</p><p>Every grant tells a story. Every nomination reflects a cause close to someone’s heart. Together, they form a growing circle of impact.</p><p>Our mission remains simple: to inspire LOOPERS to help make the world a better place—one intentional act at a time.</p><p>We’ll announce future nomination dates soon. Until then, we invite you to learn more, meet our recipients, and continue LOOPING IN.<br/><a href=\"/pages/about-us\" title=\"About us\">Learn More About Our Mission</a><br/><br/><a href=\"https://laloop.com/collections/shop-all\" title=\"https://laloop.com/collections/shop-all\">Shop to Support</a></p>",
+        "margin_top": 0,
+        "margin_bottom": 60
+      }
+    },
+    "product_carousel": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "<p>Best Sellers</p>",
+        "product_list": [
+          "the-agnes",
+          "the-allegra-tag-in-black",
+          "the-claudia",
+          "the-okada-silver-new",
+          "the-agnes-in-silver",
+          "the-morgan-copy",
+          "the-camilla-new",
+          "the-georgie-cl",
+          "the-georgie-tag",
+          "the-langston-black-gun-adj-new",
+          "the-rae-black-new",
+          "the-simon-21-brown-new",
+          "the-stockard-black-silver-new",
+          "the-tonne-tortoise-silver-new",
+          "the-camilla-silver-new",
+          "the-charlie",
+          "the-georgie-21-gold-new",
+          "the-morgan-black-new"
+        ],
+        "products_count": 4,
+        "carousel_loop": false,
+        "link": "SHOP FAVORITES",
+        "button_link": "shopify://collections/loopers-favorites",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_sku": false,
+        "quickview_show": true,
+        "show_link_carousel": false,
+        "margin_top": 0,
+        "margin_bottom": 60
+      }
+    },
+    "main_lookbook_3A6hE7": {
+      "type": "main-lookbook",
+      "blocks": {
+        "about_blocks_YEqGHa": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Signature</h2><p><em>SHOP OUR SIGNATURE COLLECTION</em></p>",
+            "heading_link": "shopify://collections/signature",
+            "block_image": "shopify://shop_images/Signature-home-card_e954af74-af3f-45b5-ab8e-b6ca3891a332.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_pDQ86W": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Traveler</h2><p><em>SHOP OUR TRAVELER COLLECTION</em></p>",
+            "heading_link": "shopify://collections/traveler",
+            "block_image": "shopify://shop_images/Traveler-home-card_3b94bcb7-c1a7-48c3-9612-075791c95279.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_L8FahJ": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Bold</h2><p><em>SHOP OUR BOLD COLLECTION</em></p>",
+            "heading_link": "shopify://collections/bold",
+            "block_image": "shopify://shop_images/bold-home-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_rEVUNE": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Artisan</h2><p><em>SHOP OUR ARTISAN COLLECTION</em></p>",
+            "heading_link": "shopify://collections/artisan",
+            "block_image": "shopify://shop_images/Artisan-home-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "about_blocks_YEqGHa",
+        "about_blocks_pDQ86W",
+        "about_blocks_L8FahJ",
+        "about_blocks_rEVUNE"
+      ],
+      "custom_css": [
+        ".fullscreen-container {padding: 0;}",
+        ".collection-list .page-header {display: none;}",
+        ".collection-list .collection-product-list {--gap: 0;}",
+        "@media (min-width: 750px) {.collection-list .collection-product-list {--grid-width: calc(100% / var(--per-row)); }}"
+      ],
+      "name": "t:sections.main-lookbook.name",
+      "settings": {
+        "title": "",
+        "per_row": 2,
+        "image_ratio": "square",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_xFqz39": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FhCdK9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>As Seen On</p>",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FhCdK9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 60,
+        "margin_bottom": 0
+      }
+    },
+    "product_markers_aYXU87": {
+      "type": "product-markers",
+      "blocks": {
+        "slide_czwfGg": {
+          "type": "slide",
+          "settings": {
+            "product": "the-charlie",
+            "to_bottom": 68,
+            "to_right": 69
+          }
+        }
+      },
+      "block_order": [
+        "slide_czwfGg"
+      ],
+      "name": "t:sections.product-markers.presets.name",
+      "settings": {
+        "color_scheme_markers": "background-2",
+        "image": "shopify://shop_images/LALOOP_805OC_MODEL_1.jpg",
+        "color_scheme_products": "background-5",
+        "image_position": "Center",
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_desc": false,
+        "show_sku": false,
+        "show_vendor": false,
+        "quickview_show": false,
+        "show_link_markers": true,
+        "margin_top": 50,
+        "margin_bottom": 0
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog_title": "Stay Current with LA LOOP",
+        "blog": "news",
+        "post_limit": 9,
+        "show_image": true,
+        "show_tags": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_btn": true,
+        "show_view_all": true,
+        "margin_top": 60,
+        "margin_bottom": 0
+      }
+    },
+    "banner_with_text_tUp9rg": {
+      "type": "banner-with-text",
+      "custom_css": [
+        "@media (max-width: 599px) {.banner-with-text {--slide-height: calc(78vh - var(--announcement-height)); } .banner-with-text .content-width--a-half {max-width: calc(83vw - 2rem); } .banner-with-text img, .banner-with-text svg {object-position: 75% 50%; }}"
+      ],
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "",
+        "show_breadcrumbs": false,
+        "breadcrumb_text": "Collections",
+        "image": "shopify://shop_images/home-footer-banner.jpg",
+        "image_size": "large",
+        "title": "We Are LA LOOP",
+        "content_text": "<p>In 1999, LA LOOP introduced the necklace for eyewear — a patented design that combined style and function. Recognized by a buyer at the MoMA Design Store, LA LOOP quickly gained credibility as a true invention. Born in Los Angeles, the brand expanded globally and is now sold in select stores across 28 countries. <br/><br/>Over two decades later, LA LOOP remains a leader in innovative, timeless accessories that redefine how style and function coexist.</p>",
+        "text_alignment": "left",
+        "content_width": "a-half",
+        "overlay_enable": false,
+        "overlay_opacity": 50,
+        "button_link": "shopify://collections",
+        "button_label": "SHOP NOW",
+        "button_style": "primary",
+        "margin_top": 60,
+        "margin_bottom": 0
+      }
+    },
+    "apps_ABXiWB": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_7RRQYM": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 60,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_7RRQYM"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "1eb50d74-a7e2-4c9e-807b-6abd15dcc12b",
+    "material_carousel_xPYDFn",
+    "main_lookbook_nU6T89",
+    "main_lookbook_QKJjRf",
+    "video_GNkRMx",
+    "video_with_text_KHeYhB",
+    "product_carousel",
+    "main_lookbook_3A6hE7",
+    "rich_text_xFqz39",
+    "product_markers_aYXU87",
+    "featured_blog",
+    "banner_with_text_tUp9rg",
+    "apps_ABXiWB"
+  ]
+}

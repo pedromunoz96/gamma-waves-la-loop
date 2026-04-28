@@ -1,0 +1,114 @@
+{%- assign premium_packaging = product.metafields.packaging.premium_packaging.value -%}
+{%- assign section_id = section.id | default: 'static' -%}
+
+{%- if premium_packaging != blank -%}
+    <div class="premium-gift-packaging">
+        <h2 class="about__accordion-title">
+            <span>PREMIUM GIFT PACKAGING</span>
+        </h2>
+        <div class="packaging" id="premiumId-{{ section_id }}">
+            {%- assign premium_variant_id = premium_packaging.first_available_variant.id -%}
+            <div class="field">
+                <input class="form-check-input" type="checkbox" name="packagingOption" id="premium-{{ section_id }}"
+                        data-variant-id="{{ premium_variant_id }}"
+                        data-is-premium="true"
+                        data-product-handle="{{ premium_packaging.handle }}"
+                        aria-label="PREMIUM GIFT PACKAGING"
+                        aria-checked="false">
+                <label class="form-check-label" for="premium-{{ section_id }}">
+                    <b></b> Add Premium Gift Packaging for {{ premium_packaging.price | money }}
+                </label>
+            </div>
+
+            <div class="product__popup packaging__link-after-label" style="margin: 0 0 1rem">
+                <modal-opener class="no-js-hidden" data-modal="#PopupModal-premium-packaging-{{ section_id }}">
+                    <button id="ProductPopup-premium-packaging-inline-{{ section_id }}" class="popup__link popup__link--info" type="button" aria-haspopup="dialog" title="View Premium Packaging details">
+                        <span class="view-details-link">(View Packaging)</span>
+                    </button>
+                </modal-opener>
+            </div>
+
+            <div class="product-popup-modal__content-info no-js">
+                <h2 class="product-popup-modal__title">
+                    {{ settings.premium_packaging_label | default: "Premium Gift Packaging" }}
+                </h2>
+                <div class="product-popup-modal__text">
+                    {%- if premium_packaging.featured_image -%}
+                        <div class="packaging-images">
+                            <img src="{{ premium_packaging.featured_image | img_url: 'medium' }}" alt="Premium Packaging" loading="lazy" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                        </div>
+                    {%- endif -%}
+                    {%- if settings.premium_packaging_copy != blank -%}
+                        {{ settings.premium_packaging_copy }}
+                    {%- else -%}
+                        <p>Premium gift packaging for your special occasion.</p>
+                    {%- endif -%}
+                </div>
+            </div>
+
+            <div class="field packaging-message-field" style="display: none;">
+                <textarea rows="2" id="message-product-combined-listing-{{ section_id }}" class="text-area field__input no-radius border-act" name="properties[Message]" placeholder="Please enter your personalized note here" aria-required="false" style="min-height: 7rem"></textarea>
+                <label class="form__label field__label" for="message-product-combined-listing-{{ section_id }}">
+                    Please enter your personalized note here
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <modal-dialog id="PopupModal-premium-packaging-{{ section_id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+        <div role="dialog" aria-label="{{ settings.premium_packaging_label | default: 'Premium Gift Packaging' }}" aria-modal="true" class="product-popup-modal__content packaging-popup-modal__content" tabindex="-1">
+            <button id="ModalClose-premium-packaging-{{ section_id }}" type="button" class="product-popup-modal__toggle modal-close-button" aria-label="{{ 'accessibility.close' | t }}">
+                {% render 'icon-close' %}
+            </button>
+            <div class="product-popup-modal__content-info">
+                <h4 class="product-popup-modal__title">
+                    {{ settings.premium_packaging_label | default: "Premium Gift Packaging" }}
+                </h4>
+                <div class="product-popup-modal__text">
+                    {%- if premium_packaging.featured_image -%}
+                        <div class="packaging-images">
+                            <img src="{{ premium_packaging.featured_image | img_url: 'large' }}" alt="Premium Packaging" loading="lazy" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                        </div>
+                    {%- endif -%}
+                    {%- if settings.premium_packaging_copy != blank -%}
+                        {{ settings.premium_packaging_copy }}
+                    {%- else -%}
+                        <p>Premium gift packaging for your special occasion.</p>
+                    {%- endif -%}
+                </div>
+            </div>
+        </div>
+    </modal-dialog>
+{%- endif -%}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const packagingContainer = document.querySelector('.premium-gift-packaging');
+
+        if (packagingContainer) {
+            const packagingInput = packagingContainer.querySelector('input[name="packagingOption"]');
+            const messageField = packagingContainer.querySelector('.packaging-message-field');
+            const messageTextarea = messageField ? messageField.querySelector('textarea') : null;
+
+            if (packagingInput && messageField && messageTextarea) {
+                function updateMessageField() {
+                    const isPackagingSelected = packagingInput.checked;
+
+                    messageField.style.display = isPackagingSelected ? 'block' : 'none';
+
+                    if (isPackagingSelected) {
+                        messageTextarea.setAttribute('required', 'required');
+                        messageTextarea.setAttribute('aria-required', 'true');
+                    } else {
+                        messageTextarea.removeAttribute('required');
+                        messageTextarea.setAttribute('aria-required', 'false');
+                        messageTextarea.value = '';
+                    }
+                }
+
+                packagingInput.addEventListener('change', updateMessageField);
+                updateMessageField();
+            }
+        }
+    });
+</script>

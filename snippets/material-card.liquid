@@ -1,0 +1,14 @@
+<div class="material-card__inner">
+    <a href="{{ material_link | default: '#' }}" class="material-card__link">
+        <div class="material-card__image-wrapper">
+            {%- if image != blank -%}
+                <img class="material-card__image" src="{{ image | image_url: width: 500 }}" alt="{{ title | escape }}" loading="lazy" width="{{ image.width }}" height="{{ image.height }}">
+            {%- else -%}
+                <div class="material-card__image placeholder-background">
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+            {%- endif -%}
+        </div>
+        <p class="material-card__title">{{ title }}</p>
+    </a>
+</div>

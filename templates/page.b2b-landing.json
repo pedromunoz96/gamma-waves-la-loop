@@ -1,0 +1,246 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "banner_with_text_YYJYgc": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "Wholesale Landing",
+        "image": "shopify://shop_images/wholesale-landing-banner.jpg",
+        "image_size": "large",
+        "title": "Welcome to the LA LOOP B2B Portal",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "ninety",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "#",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "instagram_collage_VPhJUK": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_BUpTfe": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-01.jpg",
+            "button_link": ""
+          }
+        },
+        "card_QEb3jN": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-02.jpg",
+            "button_link": ""
+          }
+        },
+        "card_Cjwc3c": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-03.jpg",
+            "button_link": ""
+          }
+        },
+        "card_eaPeqJ": {
+          "type": "card",
+          "settings": {
+            "card_img": "shopify://shop_images/insta-04.jpg",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_BUpTfe",
+        "card_QEb3jN",
+        "card_Cjwc3c",
+        "card_eaPeqJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "title": "<p>@laloop</p>",
+        "text": "FOLLOW US ON INSTAGRAM",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "GET INSPIRED WITH LALOOP",
+        "button_link": "",
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_W3adhW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8dwQUr": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Whether you’re an existing LA LOOP partner or interested in joining our community, you’re in the right place.</p>",
+            "heading_size": "medium"
+          }
+        },
+        "text_UDT9GJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select the option below that best describes you.</p>"
+          }
+        },
+        "button_4qqmGi": {
+          "type": "button",
+          "settings": {
+            "button_label": "I am a Current B2B Customer",
+            "button_link": "https://la-loop.account.myshopify.com/",
+            "button_style": "primary"
+          }
+        },
+        "button_9tMbJq": {
+          "type": "button",
+          "settings": {
+            "button_label": "I am an existing LA LOOP wholesale account but not yet registered for B2B access",
+            "button_link": "shopify://pages/b2b-access",
+            "button_style": "primary"
+          }
+        },
+        "button_QAHJBk": {
+          "type": "button",
+          "settings": {
+            "button_label": "I would like to become an Authorized LA LOOP Dealer",
+            "button_link": "shopify://pages/wholesale-application",
+            "button_style": "primary"
+          }
+        },
+        "text_cf4eVd": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p><p><strong>Need help? <br/></strong>If you’re having trouble logging in or have questions, we’re here to support you.</p><p>Email <a href=\"mailto:hello@laloop.com\"><strong>hello@laloop.com</strong></a> or call <strong>310.449.1155</strong>.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8dwQUr",
+        "text_UDT9GJ",
+        "button_4qqmGi",
+        "button_9tMbJq",
+        "button_QAHJBk",
+        "text_cf4eVd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "authorized-dealer",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "main_lookbook_xLjLKy": {
+      "type": "main-lookbook",
+      "blocks": {
+        "about_blocks_APGxcU": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Easy Return</h2><p><em>CLICK HERE</em></p>",
+            "heading_link": "https://laloop.com/pages/returns",
+            "block_image": "shopify://shop_images/easy-return-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_r9ji7G": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Free US Shipping - Orders $150+</h2><p><em>CLICK HERE</em></p>",
+            "heading_link": "https://laloop.com/pages/faq#freeShipping",
+            "block_image": "shopify://shop_images/free-shipping-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_tKUVic": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Handmade</h2><p><em>CLICK HERE</em></p>",
+            "heading_link": "https://laloop.com/pages/faq",
+            "block_image": "shopify://shop_images/handmade-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_fB6yCG": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h2>Gift Packaging</h2><p><em>MAKE SOMEONE'S DAY</em></p>",
+            "heading_link": "https://laloop.com/products/premium-packaging",
+            "block_image": "shopify://shop_images/gift-packaging-card.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "about_blocks_APGxcU",
+        "about_blocks_r9ji7G",
+        "about_blocks_tKUVic",
+        "about_blocks_fB6yCG"
+      ],
+      "custom_css": [
+        ".fullscreen-container {padding: 0;}",
+        ".collection-list .page-header {display: none;}",
+        ".collection-list .collection-product-list {--gap: 0;}",
+        "@media (min-width: 750px) {.collection-list .collection-product-list {--grid-width: calc(100% / var(--per-row)); }}"
+      ],
+      "name": "t:sections.main-lookbook.name",
+      "settings": {
+        "title": "",
+        "per_row": 2,
+        "image_ratio": "square",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter_tMXpY9": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "heading": "Join our LOOPER Community",
+        "newsletter_text": "<p>Sign up & receive 10% off your first order</p>",
+        "button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "pages",
+    "banner_with_text_YYJYgc",
+    "instagram_collage_VPhJUK",
+    "rich_text_W3adhW",
+    "main_lookbook_xLjLKy",
+    "newsletter_tMXpY9"
+  ]
+}

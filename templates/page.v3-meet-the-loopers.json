@@ -1,0 +1,636 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "banner_with_text_UD3Yjz": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "Meet The Loopers",
+        "image": "shopify://shop_images/Meet_The_Loopers_banner.jpg",
+        "image_size": "medium",
+        "title": "Meet The Loopers",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "ninety",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_B4K6UW": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/meet-the-loopers-lida-ahmady_a952a7c7-f314-4a6f-84b3-a7874f96c7d1.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Lida Ahmady</p>",
+        "subheading": "<p><strong>ACUPUNCTURIST AND CHINESE HERBALIST<br/></strong><br/>As an acupuncturist and Chinese Herbalist based in New York, Lida Ahmady is dedicated to connecting with people on a deep level to promote healing.<br/>Lida wears the Agnes.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/petite-chain",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_wKCYQL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cmMQJB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I was in an important meeting in a dark restaurant and could not find my glasses. I had to use the flashlight on my phone so I could read the menu.\" <br/><br/><em>—Lida Ahmady</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cmMQJB"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_CEJaK4": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/Junod-Etienne_3390af13-085f-4c91-a589-9f75cc13247f.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Junod Etienne<br/></p>",
+        "subheading": "<p><strong>CLINICAL HYPNOTHERAPIST</strong><br/><br/>We could all use a Junod Etienne in our lives. Officially, he’s a clinical hypnotherapist who helps people stop smoking, manage anxiety, and resolve unhealthy habits. But more than that, he says, “I help people become more aware and more intentional with their lives and to see things about themselves that make them feel valuable.”<br/><br/>Junod wears the Langston.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/black-leather-with-gunmetal-plated-dog-tag",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_hmF8Uy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_hEtdpK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I stick my glasses under the bed when it’s time to sleep. I always lose them.\"<br/><br/><em>—Junod Etienne</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_hEtdpK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_JmVcmh": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/Dione-Marie-David_60d68bac-7361-47a2-a99e-7931c58dbd01.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Dione Marie David</p>",
+        "subheading": "<p><strong>STYLIST AND BRAND CONSULTANT</strong><br/><br/>Dione is a stylist and a brand consultant, currently working on a book about wardrobe staples. She also has a secret talent for public speaking. One cause she’s particularly vocal about? Research on endometriosis. “It’s something that runs in my family and it’s not widely spoken about as a chronic illness.”<br/><br/>Dione wears the Holly.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/freshwater-pearl-with-gold",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_TBVY8n": {
+      "type": "rich-text",
+      "blocks": {
+        "text_mU3nbf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"When I was 16 I desperately wanted some Christian Dior sunglasses. My father said, ‘I know you. Don’t buy expensive glasses. You’re just going to sit on them.’ He was right. I sat on them.\"<br/><br/><em>—Dione Marie David</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_mU3nbf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_HXRaCf": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/Myki-Stackleather_5b949679-1c91-4d58-ba0b-4f37876fef84.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Myki Stackleather</p>",
+        "subheading": "<p><strong>VOLUNTEER AND RESTAURANTEUR</strong><br/><br/>Myki Stackleather always seems to pop up where the action is. He worked for Helmut Lang in SoHo during the designer’s heyday. He has a restaurant POST in the East Village. He’s a volunteer at World Central Kitchen. And he’s developing a line of hot sauce, and launching a line of outerwear. “I can multitask,” he points out almost needlessly. “It’s woven into my personality.”<br/><br/>Myki wears the Elena.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/fontana-acetate-links",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_ytX4LX": {
+      "type": "rich-text",
+      "blocks": {
+        "text_YfWjAA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Once I wore (and lost) my glasses while I was swimming in a lake. I don't know why I did this. They were brand new.\"<br/><br/><em>—Myki Stackleather</em><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_YfWjAA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_Xt3fJN": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/Judi-Wong_d6adc168-9d4b-4d2b-9755-007182662e0f.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Judi Wong</p>",
+        "subheading": "<p><strong>RESTAURANTEUR</strong><br/><br/>Judi Wong is a restaurateur, a single mom, a stellar cook, and a budding ceramicist who also juggles work with food-related charities Edible School Yard, The World Central Kitchen, and Coalition for the Homeless. Her superpower comes as no surprise: “I can keep seven plates in the air, handle everything, and not get upset.” <br/><br/>Judi wears the Rae.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/sportloop",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_M4TcwQ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_akm4nF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Once there was a fire in my apartment. I grabbed my 4-year-old son but I forgot my glasses. I left him with the doorman and ran back up and got my glasses from the nightstand.\"<br/><br/><em>—Judi Wong</em><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_akm4nF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_6mKXPr": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/Stella-Westlake_dc14fb29-13b6-460d-9894-1539e2c7b1c3.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Stella Westlake</p>",
+        "subheading": "<p>Stella Westlake, a student of art history and journalism at Northeastern University, is always making something. “I draw, paint, knit, crochet, cook.” More significantly she hopes to help make the world a more equitable place. “I go to school on a full scholarship. I believe in equity in education and equity in general.” <br/><br/>Stella wears the Morgan.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/basic-gold-braided-leather",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_YVDHdq": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cbhMyp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I have this pair of vintage Christian Dior sunglasses, and I don't treat them very well.\"<br/><br/><em>—Stella Westlake</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cbhMyp"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_wb7PKt": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/Julio-Espada.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Julio Espada</p>",
+        "subheading": "<p><strong>ARTIST AND DESIGNER</strong><br/><br/>Julio Espada is an artist and a designer and something of a legend in the fashion world. When not working on new art projects, lately he’s been delving into the writings of the artist Donald Judd. His superpower? Meditation. “It took years of learning but I’m very disciplined. Meditation is a very practical muscle to put to work.”<br/><br/>Julio wears the Allegra.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/clifton-italian-leather-coral?variant=39812325572706",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_kqjzBQ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qxjbtn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I will never forget that time I sat on my glasses in the back of a Checkered cab—back when there were still Checkered cabs.\"<br/><br/><em>—Julio Espada</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qxjbtn"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_yznAKW": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/Daryl-K.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Daryl K</p>",
+        "subheading": "<p><strong>FASHION DESIGNER</strong><br/><br/>Daryl Kerrigan is a fashion designer (@darylknyc), a mom, and a champion of mother earth (@_mothalova_). She also happens to be one of the coolest women we know. Her superpower? “Never giving up—striving to be the best version of myself, creatively and spiritually.” <br/><br/>Daryl wears the Allegra.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/clifton-italian-leather-coral",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_kbbiyV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_XMca43": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I lose my effing glasses every day. Drives me crazy. I found them out in the garden in the rain a few weeks ago.\"<br/><br/><em>—Daryl K</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_XMca43"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_nFBczA": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/Atef-Boulaabi.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Atef Boulaabi</p>",
+        "subheading": "<p><strong>CULINARY INNOVATOR AND FOUNDER</strong><br/><br/>As the founder of SOS Chefs, a spice and rare ingredients mecca in New York’s East Village, Atef Boulaabi has helped to broaden palates and culinary horizons of top chefs and adventurous home cooks alike. But she also thinks and acts locally: “I’m teaching the neighborhood children about eating well.”<br/><br/>Atef wears the Dearie.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/the-bellissima-necklace",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_4VzJ48": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QP98Ab": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I last misplaced my glasses in the airplane. I searched and searched and found them on my head, stuck in my hair.\"<br/><br/><em>—Atef Boulaabi</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_QP98Ab"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_mJ6LcK": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/Sasha-Iglehart.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Sasha Iglehart</p>",
+        "subheading": "<p>Sasha Iglehart has a sharp eye and a huge heart. A long-time fashion editor (Harper’s Bazaar, Glamour), she is now the very hands-on founder of @a.shirt.story, a collection of cotton dress shirts that she sources from thrift stores and ebay and lovingly upcycles. If the future of fashion, as she likes to say, is circular, that future looks very bright—and snazzy—indeed. <br/><br/>Sasha wears the Charlie.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/the-oxidized-silver-chain",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_QwAxtC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_xfAAMH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I literally sleep in my glasses because I am so afraid of losing them. I'm so blind, I cannot do much without them.\"<br/><br/><em>—Sasha Iglehart</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_xfAAMH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_8ddeT3": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row",
+        "image": "shopify://shop_images/Wendy-Clurman.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Wendy Clurman</p>",
+        "subheading": "<p><strong>FASHION CONSULTANT</strong><br/><br/>Wendy Clurman is a fashion consultant who brings polish and cred to countless brands. These days, though, it’s more likely to see this self-described perfectionist/planner on a film set than at a runway show, as she travels with her teenage daughter Piper, an up-and-coming actress. Together they also dedicate their time to the Leukemia and Lymphoma Society, actively raising money in memory of Wendy’s father, who passed away from Leukemia when she was 12. <br/><br/>Wendy wears the Bradley.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "DISCOVER",
+        "button_link": "https://laloop.com/products/sterling-square-link-dog-tag",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_NWVkL8": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fHfGD7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"I always say I wish my glasses had a microchip, so I could find them like my phone. I’m always losing them.\"<br/><br/>—Wendy Clurman</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_fHfGD7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "loopers-quote",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 100,
+        "margin_bottom": 80
+      }
+    },
+    "apps_9xXnih": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_PjmGwD": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_PjmGwD"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "pages",
+    "banner_with_text_UD3Yjz",
+    "image_with_text_B4K6UW",
+    "rich_text_wKCYQL",
+    "image_with_text_CEJaK4",
+    "rich_text_hmF8Uy",
+    "image_with_text_JmVcmh",
+    "rich_text_TBVY8n",
+    "image_with_text_HXRaCf",
+    "rich_text_ytX4LX",
+    "image_with_text_Xt3fJN",
+    "rich_text_M4TcwQ",
+    "image_with_text_6mKXPr",
+    "rich_text_YVDHdq",
+    "image_with_text_wb7PKt",
+    "rich_text_kqjzBQ",
+    "image_with_text_yznAKW",
+    "rich_text_kbbiyV",
+    "image_with_text_nFBczA",
+    "rich_text_4VzJ48",
+    "image_with_text_mJ6LcK",
+    "rich_text_QwAxtC",
+    "image_with_text_8ddeT3",
+    "rich_text_NWVkL8",
+    "apps_9xXnih"
+  ]
+}

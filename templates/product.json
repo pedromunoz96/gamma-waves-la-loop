@@ -1,0 +1,216 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "b56c5568-2b3c-4ba5-848e-3c253ab24fcf": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {}
+        },
+        "product-description": {
+          "type": "product-description",
+          "settings": {
+            "default_open": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "premium_gift_packaging_4T6GRn": {
+          "type": "premium_gift_packaging",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "5966765d-4c44-4db2-bcbf-ffda4afe54f7": {
+          "type": "about",
+          "settings": {
+            "default_open": false,
+            "about_heading": "Details",
+            "about_heading_content": "{{ product.metafields.custom.details | metafield_tag }}"
+          }
+        },
+        "about_1": {
+          "type": "about",
+          "settings": {
+            "default_open": false,
+            "about_heading": "CARE",
+            "about_heading_content": "{{ product.metafields.custom.care | metafield_tag }}"
+          }
+        },
+        "99ff979c-3238-4627-8090-4f2e2cefe4cb": {
+          "type": "about",
+          "settings": {
+            "default_open": false,
+            "about_heading": "DELIVERY & RETURNS",
+            "about_heading_content": "{{ product.metafields.custom.delivery_returns | metafield_tag }}"
+          }
+        },
+        "about_9XgaXz": {
+          "type": "about",
+          "settings": {
+            "default_open": false,
+            "about_heading": "PERSONALIZED FIT",
+            "about_heading_content": "{{ product.metafields.custom.personalized_fit | metafield_tag }}<p>Unlock the perfect fit for your needs and find the ideal pairing that seamlessly integrates into your lifestyle, delivering unparalleled satisfaction.<br/><br/></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "b56c5568-2b3c-4ba5-848e-3c253ab24fcf",
+        "product-description",
+        "variant_picker",
+        "premium_gift_packaging_4T6GRn",
+        "buy_buttons",
+        "5966765d-4c44-4db2-bcbf-ffda4afe54f7",
+        "about_1",
+        "99ff979c-3238-4627-8090-4f2e2cefe4cb",
+        "about_9XgaXz"
+      ],
+      "custom_css": [
+        "span.advantage__title {display: none !important;}"
+      ],
+      "settings": {
+        "image_gallery_collage": "thumbnail",
+        "desktop_alignment": "right",
+        "mobile_alignment": "after",
+        "image_fit": "cover",
+        "show_share_facebook": false,
+        "show_share_twitter": false,
+        "show_share_pinterest": false,
+        "show_share_copy": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "<p>You May Also Like</p>",
+        "link": "",
+        "button_link": "",
+        "products_limit": 4,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_sku": false,
+        "quickview_show": true,
+        "show_link": false,
+        "margin_top": 60,
+        "margin_bottom": 60
+      }
+    },
+    "image_with_text_k3FfhA": {
+      "type": "image-with-text",
+      "custom_css": [
+        "@media (max-width: 767px) {.image-with-text__content-item h3 br {display: none; }}"
+      ],
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/product-section-img.jpg",
+        "image_size": "large",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Patented to Keep<br/>Your Eyewear in Place</p>",
+        "subheading": "<p>LA LOOP created an entirely new category of accessory—where the elegance of a necklace meets the function of eyewear. In 1999, in New York City’s Jewelry District, we introduced our signature design: a sleek chain paired with a simple silver circle engineered with patented swiveling hinges that rotate 360 degrees. The result was effortless and innovative—making LA LOOP the original necklace for eyewear.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://pages/about-us",
+        "button_style": "primary",
+        "margin_top": 60,
+        "margin_bottom": 60
+      }
+    },
+    "banner_with_text_eJaTd8": {
+      "type": "banner-with-text",
+      "custom_css": [
+        "@media (max-width: 767px) {.banner-with-text {--slide-height: calc(70vh - var(--announcement-height)); }}"
+      ],
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "product-banner",
+        "show_breadcrumbs": false,
+        "breadcrumb_text": "Collections",
+        "image": "shopify://shop_images/product-banner.jpg",
+        "image_size": "large",
+        "title": "\"Sharp, modern, and so well made—it instantly elevates any outfit.\" – Marcus T. ",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "seventy",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "apps_yirARL": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_zNAdTL": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_zNAdTL"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "image_with_text_k3FfhA",
+    "banner_with_text_eJaTd8",
+    "apps_yirARL"
+  ]
+}

@@ -1,0 +1,240 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "lookbook": {
+      "type": "banner-with-text",
+      "settings": {
+        "title": "<p>Write a <em>Strong Section Title</em><br>to Draw Attention</p>",
+        "content_text": "",
+        "text_alignment": "center",
+        "button_label": "",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "694a0e2d-a840-467a-aabe-ec8ee66319f4": {
+      "type": "product-slider",
+      "blocks": {
+        "template--18878045552927__694a0e2d-a840-467a-aabe-ec8ee66319f4-16842311157cfd81b6-0": {
+          "type": "product-slider_carousel",
+          "settings": {
+            "product": "",
+            "heading_slider_image": "",
+            "color_scheme_text": "light"
+          }
+        },
+        "template--18878045552927__694a0e2d-a840-467a-aabe-ec8ee66319f4-16842311157cfd81b6-1": {
+          "type": "product-slider_carousel",
+          "settings": {
+            "product": "",
+            "heading_slider_image": "",
+            "color_scheme_text": "light"
+          }
+        },
+        "template--18878045552927__694a0e2d-a840-467a-aabe-ec8ee66319f4-16842311157cfd81b6-2": {
+          "type": "product-slider_carousel",
+          "settings": {
+            "product": "",
+            "heading_slider_image": "",
+            "color_scheme_text": "light"
+          }
+        }
+      },
+      "block_order": [
+        "template--18878045552927__694a0e2d-a840-467a-aabe-ec8ee66319f4-16842311157cfd81b6-0",
+        "template--18878045552927__694a0e2d-a840-467a-aabe-ec8ee66319f4-16842311157cfd81b6-1",
+        "template--18878045552927__694a0e2d-a840-467a-aabe-ec8ee66319f4-16842311157cfd81b6-2"
+      ],
+      "settings": {
+        "color_scheme_slider": "background-2",
+        "heading_slider": "<p>Highlight <em>Your Best</em></p>",
+        "row-reverse": "row-reverse",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_desc": false,
+        "show_vendor": false,
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "product_carousel": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "<p><em>Featured</em> Products</p>",
+        "product_list": [],
+        "products_count": 3,
+        "link": "Link label",
+        "button_link": "",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "quickview_show": true,
+        "margin_top": 110,
+        "margin_bottom": 0
+      }
+    },
+    "product_full_screen": {
+      "type": "product-full-screen",
+      "settings": {
+        "image_size": "adapt",
+        "two_columns": false,
+        "color_scheme": "light",
+        "margin_top": 110,
+        "margin_bottom": 0
+      }
+    },
+    "d2383f51-9d05-4320-b1c7-ccebd5d8023d": {
+      "type": "product-slider",
+      "blocks": {
+        "template--18878045552927__d2383f51-9d05-4320-b1c7-ccebd5d8023d-16842311157cfd81b6-0": {
+          "type": "product-slider_carousel",
+          "settings": {
+            "product": "",
+            "heading_slider_image": "",
+            "color_scheme_text": "light"
+          }
+        },
+        "template--18878045552927__d2383f51-9d05-4320-b1c7-ccebd5d8023d-16842311157cfd81b6-1": {
+          "type": "product-slider_carousel",
+          "settings": {
+            "product": "",
+            "heading_slider_image": "",
+            "color_scheme_text": "light"
+          }
+        },
+        "template--18878045552927__d2383f51-9d05-4320-b1c7-ccebd5d8023d-16842311157cfd81b6-2": {
+          "type": "product-slider_carousel",
+          "settings": {
+            "product": "",
+            "heading_slider_image": "",
+            "color_scheme_text": "light"
+          }
+        }
+      },
+      "block_order": [
+        "template--18878045552927__d2383f51-9d05-4320-b1c7-ccebd5d8023d-16842311157cfd81b6-0",
+        "template--18878045552927__d2383f51-9d05-4320-b1c7-ccebd5d8023d-16842311157cfd81b6-1",
+        "template--18878045552927__d2383f51-9d05-4320-b1c7-ccebd5d8023d-16842311157cfd81b6-2"
+      ],
+      "settings": {
+        "color_scheme_slider": "background-2",
+        "heading_slider": "<p>Highlight <em>Your Best</em></p>",
+        "row-reverse": "row",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_desc": false,
+        "show_vendor": false,
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "99a31e02-d8ef-41b0-ab33-79a5da44ab08": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18684376514847__99a31e02-d8ef-41b0-ab33-79a5da44ab08-1684227820e8480d11-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><em>Introduction</em> to the Topic</p>",
+            "heading_size": "medium"
+          }
+        },
+        "template--18684376514847__99a31e02-d8ef-41b0-ab33-79a5da44ab08-1684227820e8480d11-3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--18684376514847__99a31e02-d8ef-41b0-ab33-79a5da44ab08-1684227820e8480d11-1",
+        "template--18684376514847__99a31e02-d8ef-41b0-ab33-79a5da44ab08-1684227820e8480d11-3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 190,
+        "padding_bottom": 190,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_4": {
+          "type": "card-text",
+          "settings": {
+            "card-text_description": "<p>A short introduction to your <em>social media</em></p>",
+            "heading_size": "medium",
+            "vertical_settings": "end",
+            "horizontal_settings": "left",
+            "color_scheme_2": "background-5"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "<p><em>@mon</em>aco</p>",
+        "text": "Follow Us On Instagram",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "get inspired with @monaco",
+        "padding_top": 130,
+        "padding_bottom": 300,
+        "margin_top": 110,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "lookbook",
+    "694a0e2d-a840-467a-aabe-ec8ee66319f4",
+    "product_carousel",
+    "product_full_screen",
+    "d2383f51-9d05-4320-b1c7-ccebd5d8023d",
+    "99a31e02-d8ef-41b0-ab33-79a5da44ab08",
+    "instagram-collage"
+  ]
+}

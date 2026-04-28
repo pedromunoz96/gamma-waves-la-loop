@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_with_text_QMnAar": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "Contact Us",
+        "image": "shopify://shop_images/contact-main-banner.jpg",
+        "image_size": "medium",
+        "title": "Contact Us",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "ninety",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "",
+        "button_label": "",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_TGaEXf": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/contact-img-01_1392a193-228b-40ad-944e-2573b8c9ab0a.jpg",
+        "image_size": "adapt",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-2",
+        "heading": "<p>Thank you for hanging with us!</p>",
+        "subheading": "<p>If you have questions about an order, new products, or anything else, please contact us using the form below.</p><p>If you are interested in becoming a LA LOOP wholesale partner, please specify that in the comment section and we will be in touch shortly.</p><p>We're also available by phone at: <a href=\"tel:+13104491155\" target=\"_blank\" title=\"Give us a call\">+1 310 449 1155</a>, email hello@laloop.com or IG @laloop_official.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "link",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "contact_form_MXdbWN": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "<p>Contact Us</p>",
+        "text": "Use the form below to send us a message—our team will respond as quickly as possible.",
+        "additional_text": "<p>Feel free to reach out with any questions or inquiries using the form above.</p>",
+        "margin_top": 100,
+        "margin_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "banner_with_text_QMnAar",
+    "image_with_text_TGaEXf",
+    "pages",
+    "contact_form_MXdbWN"
+  ]
+}

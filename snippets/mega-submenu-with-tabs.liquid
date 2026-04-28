@@ -1,0 +1,95 @@
+<a
+	href='{{ link.url }}'
+	{% if link.type == 'http_link' and settings.open_new_tab %}
+		target='_blank'
+	{% endif %}
+	class='header__menu-item list-menu__item list-menu__item-first link'
+	{% if link.current %}
+		aria-current='page'
+	{% endif %}
+	aria-label='{{ link.title | escape }}'
+>
+	<span
+		{%- if link.active %}
+			class='header__active-menu-item'
+		{% endif %}
+		title='{{ link.title | escape }}'
+	>
+		<span>
+			{{ link.title | escape }}
+		</span>
+	</span>
+</a>
+<div class='mega-submenu-with-tabs color-background-1'>
+	<div class='mega-submenu-with-tabs__content'>
+		<div class='mega-submenu-with-tabs__main'>
+			<ul class='mega-submenu-with-tabs__child-list list-unstyled'>
+				{%- for childlink in links -%}
+					<li
+						class='mega-submenu-with-tabs__child-item{% if forloop.first %} active{% endif %}'
+						id='{{ childlink.title | handleize | append: '-' | append: childlink.url | append: '-' | append: block.id }}'
+					>
+						<a
+							{% if childlink.type == 'http_link' and settings.open_new_tab %}
+								target='_blank'
+							{% endif %}
+							href='{{ childlink.url }}'
+							class='mega-submenu-with-tabs__child-link'
+							{% if childlink.current %}
+								aria-current='page'
+							{% endif %}
+						>
+							<span>
+								{{ childlink.title | escape }}
+							</span>
+						</a>
+					</li>
+				{%- endfor -%}
+			</ul>
+		</div>
+		<div class='mega-submenu-with-tabs__tabs'>
+			<ul class='mega-submenu-with-tabs__tabs-list list-unstyled'>
+				{%- for childlink in links -%}
+					{%- if childlink.links != blank -%}
+						<li
+							class='mega-submenu-with-tabs__tab{% if forloop.first %} active{% endif %}'
+							data-menu-tab-id='{{ childlink.title | handleize | append: '-' | append: childlink.url | append: '-' | append: block.id }}'
+						>
+							<ul class='mega-submenu-with-tabs__grandchild-list list-unstyled'>
+								{% for grandchildlink in childlink.links %}
+									<li class='mega-submenu-with-tabs__grandchild-item'>
+										<a
+											{% if grandchildlink.type == 'http_link'
+												and settings.open_new_tab
+											%}
+												target='_blank'
+											{% endif %}
+											href='{{ grandchildlink.url }}'
+											class='mega-submenu-with-tabs__grandchild-link'
+											{% if grandchildlink.current %}
+												aria-current='page'
+											{% endif %}
+										>
+											<span>
+												{{ grandchildlink.title | escape }}
+											</span>
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{%- else -%}
+						<li
+							class='mega-submenu-with-tabs__tab{% if forloop.first %} active{% endif %}'
+							data-menu-tab-id='{{ childlink.title | handleize | append: '-' | append: childlink.url | append: '-' | append: block.id }}'
+						>
+							<div class='mega-submenu-with-tabs__tab-content'>
+								<span class='mega-submenu-with-tabs__grandchild-link'>…</span>
+							</div>
+						</li>
+					{%- endif -%}
+				{%- endfor -%}
+			</ul>
+		</div>
+	</div>
+</div>

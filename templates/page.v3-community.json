@@ -1,0 +1,474 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pages": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "banner_with_text_Egbedc": {
+      "type": "banner-with-text",
+      "custom_css": [
+        "@media (max-width: 767px) {.banner-with-text {--slide-height: calc(80vh - var(--announcement-height)); }}"
+      ],
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-banner",
+        "show_breadcrumbs": true,
+        "breadcrumb_text": "LOOP IN",
+        "image": "shopify://shop_images/loop-in-banner.jpg",
+        "image_size": "large",
+        "title": "Style With Purpose",
+        "content_text": "<p>Through LOOPin, LA LOOP empowers a global community to give back, create change, and celebrate connection. In 2025, we launched the LOOPin Grants, giving Loopers the chance to nominate their favorite nonprofits for support, with winners announced each year on Giving Tuesday.<br/><br/></p>",
+        "text_alignment": "center",
+        "content_width": "sixty",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "https://laloop.com/collections/shop-all",
+        "button_label": "SHOP TO SUPPORT",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "video_with_text_3NwKL7": {
+      "type": "video-with-text",
+      "custom_css": [
+        "@media (max-width: 990px) {.video-with-text {flex-direction: column-reverse; display: flex; }}"
+      ],
+      "name": "Video with text",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "video": "shopify://files/videos/laloopin.mp4",
+        "video_size": "large",
+        "heading": "The LOOP in Mission",
+        "text": "<p>“My parents always spoke about grassroots organizers and service providers as the true heroes of our community,” Elizabeth recalls. “Their example instilled in me a lifelong commitment to encourage others to engage in their own neighborhoods, just as my parents inspired my siblings and me.” <br/></p><p>In 2020, we launched LOOPin—our social good platform—created to connect Loopers with meaningful opportunities to give back and “loop in” together. Each year, our Grant Program provides critical resources to nonprofit organizations nominated and championed by our Looper Community. <br/></p><p>At its heart, LOOPin has a simple mission: to inspire Loopers to help make the world a better place, one small act at a time. If you’d like to nominate an organization you support, we invite you to complete the application and join us in giving back.</p>",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "multicolumn_4V4anM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DkeVBn": {
+          "type": "column",
+          "settings": {
+            "heading": "The Swan Island",
+            "text": "Nominated by LOOPER & volunteer Wesley Staples",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_jy9fzF": {
+          "type": "column",
+          "settings": {
+            "heading": "Eye Care For Detroit",
+            "text": "Nominated by LOOPER Tina Arroyo",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_Tw7Exn": {
+          "type": "column",
+          "settings": {
+            "heading": "Project Hawaii ",
+            "text": "Nominated by LOOPER Kim Castellano",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_p8MjBq": {
+          "type": "column",
+          "settings": {
+            "heading": "Hollywood Food Coalition",
+            "text": "Nominated by Board Member and Volunteer David Livingston",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_GJKTRT": {
+          "type": "column",
+          "settings": {
+            "heading": "Joshua’s Heart Foundation",
+            "text": "Nominated by Christen Rhule",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DkeVBn",
+        "column_jy9fzF",
+        "column_Tw7Exn",
+        "column_p8MjBq",
+        "column_GJKTRT"
+      ],
+      "custom_css": [
+        "@media (max-width: 990px) {.multicolumn__wrapper .swiper-buttons__wrapper {display: block; margin-top: -6rem; }}"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "custom_class": "laloopin-info-cards",
+        "color_scheme": "background-2",
+        "multicolumn_to_show": 3,
+        "horizontal_alignment": "center",
+        "heading_size": "medium",
+        "img_size": "icon",
+        "img_ratio": "adapt",
+        "object_fit": "cover",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "heading_with_link_cPzALk": {
+      "type": "heading-with-link",
+      "name": "Heading with Link",
+      "settings": {
+        "heading": "Why We Loop In",
+        "link_text": "",
+        "button_link": "#",
+        "margin_top": 60,
+        "margin_bottom": 0
+      }
+    },
+    "multicolumn_tcBVCp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KVttU3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/why-we-loop-in-01.jpg",
+            "heading": "Giving the Gift of Reading with LeVar Burton and Reading Is Fundamental",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_8mEPMX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/why-we-loop-in-02.jpg",
+            "heading": "\"I Made it Myself\" Kids Mask Kits with Boys & Girls Club of America",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_9Eqnrj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/why-we-loop-in-03.jpg",
+            "heading": "#UnmaskingHomelessness with Downtown Women’s Center",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_KVttU3",
+        "column_8mEPMX",
+        "column_9Eqnrj"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "custom_class": "why-we-loop-in",
+        "color_scheme": "background-1",
+        "multicolumn_to_show": 3,
+        "horizontal_alignment": "center",
+        "heading_size": "medium",
+        "img_size": "large",
+        "img_ratio": "adapt",
+        "object_fit": "cover",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 60
+      }
+    },
+    "heading_with_link_pFYiQG": {
+      "type": "heading-with-link",
+      "name": "Heading with Link",
+      "settings": {
+        "heading": "How it Works",
+        "link_text": "",
+        "button_link": "#",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "collapsible_content_x4Pxik": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_3pHQFq": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "How LOOPin Grants are awarded. ",
+            "answer": "<p>Every year, we invite Loopers to nominate the nonprofits that inspire them most—the local heroes making a difference in their own neighborhoods. From those nominations, our community helps shape the finalists, and the winners are joyfully announced on Giving Tuesday, a day dedicated to giving back.<br/><br/></p>"
+          }
+        },
+        "accordion_9EFFVm": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "The Selection Process.",
+            "answer": "<p>We believe the best ideas come from our Loopers. That’s why nominations are reviewed with care, focusing on the heart of each organization’s work and the impact they have on the people they serve. By listening to our community, LOOPin Grants reflect the causes that matter most to you.</p>"
+          }
+        },
+        "accordion_zCww7t": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Categories Supported",
+            "answer": "<p>LOOPin Grants celebrate nonprofits of all kinds—whether they’re opening doors to education, nurturing creativity through the arts, supporting health and wellness, or providing essential social services. What ties them all together is a shared mission: building stronger, more connected communities.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_3pHQFq",
+        "accordion_9EFFVm",
+        "accordion_zCww7t"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "heading": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "main_lookbook_EDkHFN": {
+      "type": "main-lookbook",
+      "blocks": {
+        "about_blocks_c9ePrE": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h5>LeVar Burton with Reading Is Fundamental</h5>",
+            "heading_link": "",
+            "block_image": "shopify://shop_images/loopin-partners-01.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_VeGtxg": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h5>Sandy Flynn with St. Vincents Meals on Wheels</h5>",
+            "heading_link": "",
+            "block_image": "shopify://shop_images/loopin-partners-02.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        },
+        "about_blocks_kyKqUn": {
+          "type": "about_blocks",
+          "settings": {
+            "color_scheme": "light",
+            "heading": "<h5>Rory Laurie — Children’s Action Network</h5>",
+            "heading_link": "",
+            "block_image": "shopify://shop_images/loopin-partners-03.jpg",
+            "overlay_enable": true,
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "about_blocks_c9ePrE",
+        "about_blocks_VeGtxg",
+        "about_blocks_kyKqUn"
+      ],
+      "custom_css": [
+        ".collection-list .collection-product-list {--gap: 3px;}",
+        ".main-page-title {text-align: center;}",
+        ".img-ratio-square:before {padding-bottom: 100%;}",
+        "@media screen and (min-width: 1280px) {.collection-grid__title {padding: 0 22px !important; } .collection-grid__title h5 {margin-bottom: 1rem !important; max-width: 80%; }}"
+      ],
+      "name": "t:sections.main-lookbook.name",
+      "settings": {
+        "title": "<p><em>Community Champions</em></p>",
+        "per_row": 3,
+        "image_ratio": "square",
+        "margin_top": 0,
+        "margin_bottom": 60
+      }
+    },
+    "image_with_text_tFLB3F": {
+      "type": "image-with-text",
+      "name": "t:sections.image_with_text.name",
+      "settings": {
+        "row-reverse": "row-reverse",
+        "image": "shopify://shop_images/join-the-movement.jpg",
+        "image_size": "adapt",
+        "show_frame": false,
+        "color_scheme": "background-1",
+        "frame-text": "",
+        "frame-text-right": "",
+        "color_scheme_2": "background-1",
+        "heading": "<p>Join the Movement</p>",
+        "subheading": "<p>At LA LOOP, we believe change starts with connection. Through LOOPin, every Looper has the power to spark impact—whether by nominating a nonprofit, supporting a grant recipient, or simply spreading the word. Together, we’re building a community that gives back, creates change, and celebrates the everyday heroes around us.<br/><br/>Ready to make a difference? Loop in with us and be part of the movement.</p>",
+        "subheading_left_top": "",
+        "subheading_left_bottom": "",
+        "subheading_right_top": "",
+        "subheading_right_bottom": "",
+        "button_text": "SHOP TO SUPPORT",
+        "button_link": "https://laloop.com/pages/loopin-nomination",
+        "button_style": "link",
+        "margin_top": 60,
+        "margin_bottom": 60
+      }
+    },
+    "multicolumn_xQzLRP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ArQXYb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/community-info-cards-01.svg",
+            "heading": "Learn",
+            "text": "Discover the inspiring stories of past LOOPin Grant winners and see how Loopers like you are making a difference in their communities.",
+            "button_label": "LEARN MORE",
+            "button_link": "#"
+          }
+        },
+        "column_PAzQp6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/community-info-cards-02.svg",
+            "heading": "Apply",
+            "text": " Shine a light on the causes you care about—nominate your favorite nonprofit for a chance to receive a LOOPin Grant.",
+            "button_label": "APPLY NOW",
+            "button_link": "#"
+          }
+        },
+        "column_CMg69G": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/community-info-cards-03.svg",
+            "heading": "Volunteer a Non Profit",
+            "text": " Invite your friends and family to nominate too—the more voices we hear, the more impact we can make together.",
+            "button_label": "VOLUNTEER",
+            "button_link": "https://laloop.com/pages/loopin-nomination"
+          }
+        },
+        "column_RdbMxr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/community-info-cards-04.svg",
+            "heading": "Shop to Support",
+            "text": "Support our mission by purchasing The LeVar—with proceeds benefiting Reading Is Fundamental, a nonprofit close to LeVar Burton’s heart.",
+            "button_label": "VIEW THE LEVAR",
+            "button_link": "shopify://products/the-levar"
+          }
+        }
+      },
+      "block_order": [
+        "column_ArQXYb",
+        "column_PAzQp6",
+        "column_CMg69G",
+        "column_RdbMxr"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "custom_class": "community-info-cards",
+        "color_scheme": "background-1",
+        "multicolumn_to_show": 4,
+        "horizontal_alignment": "center",
+        "heading_size": "medium",
+        "img_size": "icon",
+        "img_ratio": "adapt",
+        "object_fit": "cover",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 100
+      }
+    },
+    "banner_with_text_qwWTw3": {
+      "type": "banner-with-text",
+      "custom_css": [
+        "@media (max-width: 767px) {.banner-with-text {--slide-height: calc(80vh - var(--announcement-height)); }}"
+      ],
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "color_scheme": "light",
+        "custom_class": "about-bottom-banner",
+        "show_breadcrumbs": false,
+        "breadcrumb_text": "Collections",
+        "image": "shopify://shop_images/the-holly-in-gold-308pg-model_1cca3f7c-a93c-4291-93d2-97d2cf0dbd4e.jpg",
+        "image_size": "large",
+        "title": "At LA LOOP, every necklace is more than an accessory—it’s a symbol of connection. When we LOOP in together, we turn everyday moments into opportunities to create lasting change.",
+        "content_text": "",
+        "text_alignment": "center",
+        "content_width": "seventy",
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "button_link": "shopify://pages/our",
+        "button_label": "LEARN MORE ABOUT OUR STORY",
+        "button_style": "primary",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "1761642483101d8d54": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_FXDgyf": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 65,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_FXDgyf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "pages",
+    "banner_with_text_Egbedc",
+    "video_with_text_3NwKL7",
+    "multicolumn_4V4anM",
+    "heading_with_link_cPzALk",
+    "multicolumn_tcBVCp",
+    "heading_with_link_pFYiQG",
+    "collapsible_content_x4Pxik",
+    "main_lookbook_EDkHFN",
+    "image_with_text_tFLB3F",
+    "multicolumn_xQzLRP",
+    "banner_with_text_qwWTw3",
+    "1761642483101d8d54"
+  ]
+}

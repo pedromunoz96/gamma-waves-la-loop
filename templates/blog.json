@@ -1,0 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "color_scheme": "light",
+        "block_size": "full-screen",
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "autoplay": true,
+        "hover_autoplay_stop": true,
+        "pagination": true,
+        "button_style": "secondary",
+        "overlay_opacity": 30,
+        "show_main_blogs": false,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "show_btn": true
+      }
+    },
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "card_4": {
+          "type": "card-text",
+          "disabled": true,
+          "settings": {
+            "card-text_description": "<p>A short introduction to your <em>social media</em></p>",
+            "heading_size": "medium",
+            "vertical_settings": "end",
+            "horizontal_settings": "left",
+            "color_scheme_2": "background-5"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "<p><em>@laloop_official</em></p>",
+        "text": "Follow Us On Instagram",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "button_text": "get inspired with @laloop_official",
+        "button_link": "https://www.instagram.com/laloop_official",
+        "padding_top": 130,
+        "padding_bottom": 300,
+        "margin_top": 110,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "instagram-collage"
+  ]
+}

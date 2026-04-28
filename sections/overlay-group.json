@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.overlay",
+  "name": "t:sections.overlay-group.name",
+  "sections": {
+    "popup": {
+      "type": "popup",
+      "blocks": {
+        "popup_heading": {
+          "type": "popup_heading",
+          "settings": {
+            "heading": "<p>Here can be your popup title</p>"
+          }
+        },
+        "subscribe_form": {
+          "type": "subscribe_form",
+          "settings": {
+            "placeholder_input": "Enter your email",
+            "button_label": "Join",
+            "button_style": "primary",
+            "button-position": false,
+            "description": "<p>Additional text for subscribe form.</p>"
+          }
+        },
+        "social_links": {
+          "type": "social_links",
+          "settings": {
+            "icon-color": "#040404",
+            "show_twitter": true,
+            "show_facebook": true,
+            "show_pinterest": true,
+            "show_instagram": true,
+            "show_linkedin": false,
+            "show_tiktok": false,
+            "show_tumblr": false,
+            "show_snapchat": false,
+            "show_youtube": false,
+            "show_vimeo": false
+          }
+        }
+      },
+      "block_order": [
+        "popup_heading",
+        "subscribe_form",
+        "social_links"
+      ],
+      "settings": {
+        "image_layout": "left",
+        "image_fit": "cover",
+        "limit-display": 0,
+        "limit-cache": 30,
+        "position": "center",
+        "text_layout": "left",
+        "popup-id": "",
+        "trigger-open": "manual",
+        "trigger-open-delay": 1,
+        "open-scroll-type": "%",
+        "open-scroll-position": 50,
+        "manual-selector": "#popup",
+        "trigger-close": "none",
+        "trigger-close-delay": 30,
+        "close-scroll-type": "%",
+        "close-scroll-position": 50,
+        "width": 1220,
+        "background-color": "#ffffff",
+        "heading-color": "#040404",
+        "text-color": "#717171",
+        "link-color": "#040404",
+        "icon-color": "#717171",
+        "open-animation": "Fade",
+        "exit-animation": "Fade",
+        "show-overlay": true,
+        "mobile": false,
+        "scrolling": false,
+        "overlay-close": false,
+        "esc-close": false,
+        "f4-close": false
+      }
+    }
+  },
+  "order": [
+    "popup"
+  ]
+}

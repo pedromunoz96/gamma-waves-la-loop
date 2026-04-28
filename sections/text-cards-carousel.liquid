@@ -1,0 +1,220 @@
+{{ 'section-product-carousel.css' | asset_url | stylesheet_tag }}
+<script src='{{ 'product-carousel.js' | asset_url }}' defer='defer'></script>
+{% style %}
+    {% render 'spaced-section' %}
+{% endstyle %}
+
+<div class='product-carousel color-{{ section.settings.color_scheme }}' >
+    <div class='product-carousel__top fullscreen-container'>
+        {%- if section.settings.heading != blank -%}
+            <h2 class='product-carousel__heading display-1'>
+                {{ section.settings.heading }}
+            </h2>
+        {%- endif -%}
+        <div class='product-carousel__btns'>
+            <a type='button' class='button--simple-move button button--with-underline'
+                    {% if section.settings.button_link != blank %}
+                        href='{{ section.settings.button_link }}'
+                    {% endif %}
+                    {% if section.settings.button_link == blank %}
+                        aria-disabled='true'
+                    {% endif %}
+            >
+                <span>{{ section.settings.link }}</span>
+            </a>
+        </div>
+    </div>
+    <div class='swiper-container swiper-carousel carousel_change-postion_next' data-loop="{{ section.settings.carousel_loop }}">
+        <div class='product-carousel__wrapper swiper-wrapper' data-count='{{ section.settings.cards_count }}'>
+            {%- for block in section.blocks -%}
+                <div class='
+                        text-card-slide swiper-slide lazy
+                        quickview{%- if settings.quickview_hover -%}--hover{% endif %}
+                        show
+                    '
+                        {{ block.shopify_attributes }}
+                >
+                    {% render 'text-card',
+                            year: block.settings.year,
+                            title: block.settings.title,
+                            description: block.settings.description
+                    %}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div class='product-carousel__bottom fullscreen-container' style="margin-bottom: 4.3rem;">
+            <div class='swiper_btn_container swiper_btn_center'>
+                <div class='swiper-button-prev swiper-button-prev__prod'>
+                    {% render 'icon-caret-left' %}
+                </div>
+                <div class='swiper-button-next swiper-button-next__prod'>
+                    {% render 'icon-caret-right' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text Cards Carousel",
+  "tag": "section",
+  "class": "product-carousel-section",
+  "enabled_on": {
+    "templates": ["*"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "t:sections.all.color_scheme.options__1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-3",
+          "label": "t:sections.all.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-4",
+          "label": "t:sections.all.color_scheme.options__4.label"
+        },
+        {
+          "value": "background-5",
+          "label": "t:sections.all.color_scheme.options__5.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.color_scheme.options__6.label"
+        }
+      ],
+      "default": "background-2",
+      "label": "t:sections.all.color_scheme.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Our Story",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "cards_count",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "label": "Number of cards to show",
+      "info": "Slide show on desktop only"
+    },
+    {
+      "type": "checkbox",
+      "id": "carousel_loop",
+      "default": false,
+      "label": "Enable carousel loop"
+    },
+    {
+      "type": "header",
+      "content": "Button settings"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "default": "View all",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 80,
+      "unit": "px",
+      "label": "Top margin"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 80,
+      "unit": "px",
+      "label": "Bottom margin"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_card",
+      "name": "Text Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Year",
+          "default": "1999"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "LA LOOP is Invented"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>What began as a simple idea — a necklace that could keep glasses secure — quickly evolved into a patented innovation. That first prototype didn't just solve a problem; it launched an entirely new category of accessory, merging modern design with everyday function and redefining how people wear eyewear.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Cards Carousel",
+      "blocks": [
+        {
+          "type": "text_card",
+          "settings": {
+            "year": "1999",
+            "title": "LA LOOP is Invented",
+            "description": "<p>What began as a simple idea — a necklace that could keep glasses secure — quickly evolved into a patented innovation. That first prototype didn't just solve a problem; it launched an entirely new category of accessory, merging modern design with everyday function and redefining how people wear eyewear.</p>"
+          }
+        },
+        {
+          "type": "text_card",
+          "settings": {
+            "year": "2005",
+            "title": "Global Expansion",
+            "description": "<p>Expanding our reach internationally, bringing innovative eyewear solutions to customers around the world.</p>"
+          }
+        },
+        {
+          "type": "text_card",
+          "settings": {
+            "year": "2012",
+            "title": "Award Winning Design",
+            "description": "<p>Receiving multiple design awards for our innovative approach to eyewear accessories and functionality.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
