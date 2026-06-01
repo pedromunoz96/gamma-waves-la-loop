@@ -58,17 +58,24 @@
     "custom_colors": "Black:#000",
     "pagination_type": "pagination",
     "cart_type": "drawer",
+    "free_shipping_threshold": 150,
+    "free_shipping_text_color": "#FFFFFF",
+    "free_shipping_track_color": "#f5f5f5",
+    "free_shipping_fill_color": "#44266e",
+    "cart_upsell_card_bg": "rgba(0,0,0,0)",
+    "cart_upsell_title_color": "#FFFFFF",
+    "cart_upsell_price_color": "#FFFFFF",
+    "cart_upsell_btn_bg": "rgba(0,0,0,0)",
+    "cart_upsell_btn_text_color": "#FFFFFF",
+    "cart_upsell_btn_border": true,
+    "cart_upsell_btn_border_radius": 0,
+    "cart_upsell_btn_hover_bg": "#FFFFFF",
     "type_body_letter_spacing": 0,
     "content_for_index": [],
     "blocks": {
       "319724205969189013": {
         "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
-        "settings": {}
-      },
-      "6279071938380501511": {
-        "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-        "disabled": true,
         "settings": {}
       },
       "18147337299481159562": {
@@ -293,7 +300,8 @@
     "custom_css": [
       ":root {--overlay-gradient: linear-gradient( 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100% );}",
       "#MainContent .breadcrumb {font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2.6px;}",
-      "#MainContent .breadcrumb span:last-child {opacity: 1;}"
+      "#MainContent .breadcrumb span:last-child {opacity: 1;}",
+      " /* Show search icon in mobile header (override section-level hide) */@media (max-width: 989px) {.header .header__search {display: flex !important; } .header__icon--search .icon-search {display: block !important; }}"
     ]
   }
 }

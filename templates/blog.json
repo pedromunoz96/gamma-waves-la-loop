@@ -72,6 +72,7 @@
         "card_3",
         "card_4"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "title": "<p><em>@laloop_official</em></p>",
@@ -85,10 +86,40 @@
         "margin_top": 110,
         "margin_bottom": 0
       }
+    },
+    "177741732780f7935f": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_ym87TG": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_ym87TG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "instagram-collage"
+    "instagram-collage",
+    "177741732780f7935f"
   ]
 }

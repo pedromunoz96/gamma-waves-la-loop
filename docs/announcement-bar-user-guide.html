@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Announcement Bar — User Guide</title>
+<style>
+  @page {
+    size: A4;
+    margin: 22mm 20mm;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: 'Helvetica', sans-serif;
+      font-size: 9pt;
+      color: #888;
+    }
+    @bottom-left {
+      content: "Announcement Bar — User Guide";
+      font-family: 'Helvetica', sans-serif;
+      font-size: 9pt;
+      color: #888;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #222;
+    font-size: 11pt;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+
+  .cover .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #888;
+    font-size: 10pt;
+    margin-bottom: 18px;
+  }
+
+  .cover h1 {
+    font-size: 36pt;
+    margin: 0 0 18px 0;
+    color: #111;
+    letter-spacing: -0.5px;
+  }
+
+  .cover .subtitle {
+    font-size: 13pt;
+    color: #555;
+    max-width: 380px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .cover .footer {
+    margin-top: 80mm;
+    font-size: 10pt;
+    color: #999;
+  }
+
+  h2 {
+    font-size: 17pt;
+    color: #111;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #111;
+  }
+
+  h3 {
+    font-size: 12pt;
+    color: #111;
+    margin-top: 18px;
+    margin-bottom: 6px;
+  }
+
+  p { margin: 0 0 10px 0; }
+
+  ul, ol {
+    margin: 0 0 12px 0;
+    padding-left: 22px;
+  }
+
+  li { margin-bottom: 6px; }
+
+  .lead {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 16px;
+  }
+
+  .box {
+    background: #f6f6f6;
+    border-left: 3px solid #111;
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 3px;
+  }
+
+  .box.tip {
+    border-left-color: #2e7d32;
+    background: #f1f8f1;
+  }
+
+  .box.note {
+    border-left-color: #1565c0;
+    background: #eef4fb;
+  }
+
+  .box .label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 4px;
+  }
+
+  .box.tip .label { color: #2e7d32; }
+  .box.note .label { color: #1565c0; }
+
+  table.settings {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px 0;
+    font-size: 10.5pt;
+  }
+
+  table.settings th,
+  table.settings td {
+    text-align: left;
+    padding: 9px 12px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
+  }
+
+  table.settings th {
+    background: #f6f6f6;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 9pt;
+    border-bottom: 2px solid #111;
+  }
+
+  table.settings td:first-child {
+    font-weight: 600;
+    color: #111;
+    width: 35%;
+  }
+
+  .step {
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+
+  .step .num {
+    display: inline-block;
+    background: #111;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .step .title {
+    font-weight: 600;
+    color: #111;
+  }
+
+  .step p {
+    margin: 6px 0 0 30px;
+    color: #444;
+  }
+
+  .mock-bar {
+    background: #111;
+    color: #fff;
+    padding: 12px 60px;
+    margin: 14px 0;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    font-size: 10pt;
+  }
+
+  .mock-bar::before,
+  .mock-bar::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14pt;
+    color: #fff;
+  }
+
+  .mock-bar::before { content: "‹"; left: 14px; }
+  .mock-bar::after { content: "›"; right: 14px; }
+
+  .section { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="eyebrow">User Guide</div>
+  <h1>Announcement Bar</h1>
+  <p class="subtitle">How to customize the rotating message bar at the top of your store.</p>
+  <div class="footer">Prepared by MeshPlanet</div>
+</div>
+
+<h2>What is the Announcement Bar?</h2>
+<p class="lead">The Announcement Bar is a thin strip at the very top of your store that displays short messages to your visitors. You can show multiple messages, and they rotate automatically.</p>
+
+<div class="mock-bar">Free shipping on orders over $50</div>
+
+<p>It is perfect for highlighting promotions, free shipping offers, new collections, holiday hours, or any short message you want every visitor to see.</p>
+
+<div class="box tip">
+  <div class="label">Tip</div>
+  Keep each message short — one sentence works best. Visitors only have a few seconds to read it before the next one appears.
+</div>
+
+<h2>How to open it in the editor</h2>
+<div class="step">
+  <span class="num">1</span><span class="title">Go to your Shopify admin</span>
+  <p>From your store admin, click <strong>Online Store → Themes</strong>.</p>
+</div>
+<div class="step">
+  <span class="num">2</span><span class="title">Open the theme editor</span>
+  <p>Find your live theme and click <strong>Customize</strong>.</p>
+</div>
+<div class="step">
+  <span class="num">3</span><span class="title">Locate the Announcement Bar</span>
+  <p>In the left sidebar, look under the <strong>Header</strong> group. You will see <strong>MP Announcement Bar</strong>. Click on it to open its settings.</p>
+</div>
+<div class="step">
+  <span class="num">4</span><span class="title">Save your changes</span>
+  <p>Whenever you make a change, click the <strong>Save</strong> button in the top-right corner to apply it to your live store.</p>
+</div>
+
+<h2 class="section">Bar settings</h2>
+<p>These settings control how the whole bar looks and behaves.</p>
+
+<table class="settings">
+  <thead>
+    <tr><th>Setting</th><th>What it does</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bar height</td>
+      <td>Controls how tall the bar is, between 30 and 100 pixels. A taller bar is more prominent; a shorter bar takes up less space.</td>
+    </tr>
+    <tr>
+      <td>Background color</td>
+      <td>The color of the bar itself. Pick something that contrasts with your header so the bar stands out.</td>
+    </tr>
+    <tr>
+      <td>Text color</td>
+      <td>The color of the words shown in the bar. Make sure it is easy to read against the background.</td>
+    </tr>
+    <tr>
+      <td>Arrow color</td>
+      <td>The color of the small left/right arrows visitors can click to move between messages.</td>
+    </tr>
+    <tr>
+      <td>Rotation speed</td>
+      <td>How many seconds each message stays visible before the next one appears. You can set it between 2 and 15 seconds.</td>
+    </tr>
+    <tr>
+      <td>Show navigation arrows</td>
+      <td>Turn the left/right arrows on or off. With them off, the bar still rotates automatically — visitors just can't skip ahead manually.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="box note">
+  <div class="label">Good to know</div>
+  The bar pauses automatically when a visitor hovers over it, so they have time to finish reading. It resumes as soon as they move their cursor away.
+</div>
+
+<h2 class="section">Visibility — who sees the bar</h2>
+<p>The Announcement Bar can be limited to specific audiences and countries. By default, it is configured to show <strong>only to customers in the United States</strong> and <strong>only on the DTC (Direct-to-Consumer) storefront</strong> — B2B (wholesale) customers will not see it.</p>
+
+<p>These rules can be changed at any time from the <strong>Visibility</strong> section of the bar settings.</p>
+
+<table class="settings">
+  <thead>
+    <tr><th>Setting</th><th>What it does</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hide from B2B customers</td>
+      <td>When this is checked, customers who are signed in to a B2B (wholesale) company account will not see the bar. Regular shoppers (DTC) will still see it. Uncheck it if you want every customer — including B2B — to see the bar.</td>
+    </tr>
+    <tr>
+      <td>Show only in these countries</td>
+      <td>A list of country codes where the bar should appear, separated by commas. Visitors from countries not on the list won't see the bar. Leave this field empty if you want to show the bar to visitors from every country.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Country codes — quick reference</h3>
+<p>Use the two-letter ISO country code for each country you want to include. A few common ones:</p>
+<ul>
+  <li><strong>US</strong> — United States</li>
+  <li><strong>CA</strong> — Canada</li>
+  <li><strong>MX</strong> — Mexico</li>
+  <li><strong>GB</strong> — United Kingdom</li>
+  <li><strong>AU</strong> — Australia</li>
+  <li><strong>DE</strong> — Germany</li>
+  <li><strong>FR</strong> — France</li>
+  <li><strong>ES</strong> — Spain</li>
+</ul>
+
+<p>You can find any country's two-letter code by searching online for &quot;ISO 3166-1 alpha-2&quot;.</p>
+
+<h3>Examples</h3>
+<ul>
+  <li>To show the bar <strong>only in the United States</strong>, enter: <strong>US</strong></li>
+  <li>To show the bar in <strong>the United States and Canada</strong>, enter: <strong>US, CA</strong></li>
+  <li>To show the bar in <strong>all countries</strong>, leave the field empty.</li>
+</ul>
+
+<div class="box note">
+  <div class="label">How the country is detected</div>
+  Shopify determines the country based on the visitor's selected market (the country shown in your store's currency or language switcher). This means a visitor from Mexico browsing your US store will be treated as a US visitor if their market is set to the United States.
+</div>
+
+<div class="box tip">
+  <div class="label">Tip</div>
+  Both rules work together. If a visitor is from the United States but signed in as a B2B customer, they will still <strong>not</strong> see the bar — the B2B rule takes priority.
+</div>
+
+<h2 class="section">Adding and editing messages</h2>
+<p>Each individual message is called an <strong>announcement</strong>. You can have up to <strong>10 announcements</strong> rotating in the bar.</p>
+
+<h3>To add a new message</h3>
+<ol>
+  <li>Open the Announcement Bar settings in the editor.</li>
+  <li>Click <strong>Add block → Announcement</strong>.</li>
+  <li>Type your message in the <strong>Announcement text</strong> field.</li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<h3>To edit an existing message</h3>
+<ol>
+  <li>Click on the announcement block you want to change.</li>
+  <li>Update the text.</li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<h3>To remove a message</h3>
+<ol>
+  <li>Click on the announcement block you want to remove.</li>
+  <li>Scroll down and click <strong>Remove block</strong>.</li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<h3>To reorder messages</h3>
+<p>Drag and drop the announcement blocks in the sidebar to change the order in which they appear.</p>
+
+<h2 class="section">Making a message clickable</h2>
+<p>Any announcement can be turned into a link, so when a visitor clicks it, they go to the page you choose (a product, collection, blog post, contact page, etc.).</p>
+
+<div class="step">
+  <span class="num">1</span><span class="title">Open the announcement</span>
+  <p>Click on the announcement block you want to make clickable.</p>
+</div>
+<div class="step">
+  <span class="num">2</span><span class="title">Turn on “Enable link”</span>
+  <p>Check the <strong>Enable link</strong> box.</p>
+</div>
+<div class="step">
+  <span class="num">3</span><span class="title">Choose where it goes</span>
+  <p>In the <strong>Link URL</strong> field, select a page from your store or paste a URL.</p>
+</div>
+<div class="step">
+  <span class="num">4</span><span class="title">Save</span>
+  <p>Click <strong>Save</strong>. The whole announcement is now clickable.</p>
+</div>
+
+<div class="box note">
+  <div class="label">Important</div>
+  If you fill in a link URL but leave “Enable link” unchecked, the message will <strong>not</strong> be clickable. Both must be set for the link to work.
+</div>
+
+<h2 class="section">Best practices</h2>
+<ul>
+  <li><strong>Keep it short.</strong> One short sentence per announcement. Long text gets cut off on mobile.</li>
+  <li><strong>Use 2 to 5 messages.</strong> Too many and visitors won't see them all; too few and the bar feels empty.</li>
+  <li><strong>Match your brand.</strong> Use background and text colors that fit your store's overall look.</li>
+  <li><strong>Don't rotate too fast.</strong> 4 to 6 seconds gives most readers enough time. Anything under 3 seconds feels rushed.</li>
+  <li><strong>Use links wisely.</strong> If you mention an offer, link directly to the relevant collection or product.</li>
+  <li><strong>Test on mobile.</strong> Always preview the bar on a phone before saving — that's where most visitors will see it.</li>
+</ul>
+
+<h2 class="section">Frequently asked questions</h2>
+
+<h3>Can I turn off the announcement bar without deleting it?</h3>
+<p>Yes. In the theme editor, click the eye icon next to <strong>MP Announcement Bar</strong> in the sidebar to hide it. Your settings and messages are preserved and the bar can be turned back on at any time.</p>
+
+<h3>What happens if I only have one announcement?</h3>
+<p>The bar shows that single message without rotating, and the arrows are hidden automatically.</p>
+
+<h3>Can I use emojis or special characters?</h3>
+<p>Yes. You can paste emojis directly into the announcement text field.</p>
+
+<h3>Will the bar slow down my store?</h3>
+<p>No. It is built to be lightweight and does not affect page speed.</p>
+
+<h3>Can I have different announcements for different pages?</h3>
+<p>Not with this section. The Announcement Bar shows the same messages on every page of your store. If you need different content per page, contact your developer.</p>
+
+<h3>Why don't I see the bar when I visit my store?</h3>
+<p>Check the <strong>Visibility</strong> settings. By default, the bar is only visible to visitors in the United States and is hidden from B2B accounts. If you are browsing from another country or are signed in as a B2B customer, you won't see it. You can also temporarily clear the country list to confirm the bar is working before re-applying your filters.</p>
+
+<h3>Will B2B customers ever see the bar?</h3>
+<p>Only if you uncheck the <strong>Hide from B2B customers</strong> option. With the default settings, B2B accounts never see the bar regardless of their country.</p>
+
+<div class="box tip" style="margin-top: 28px;">
+  <div class="label">Need help?</div>
+  If you run into any issues or want to add features the current settings don't cover, contact your development team at MeshPlanet.
+</div>
+
+</body>
+</html>

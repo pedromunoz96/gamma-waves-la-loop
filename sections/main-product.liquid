@@ -119,6 +119,7 @@
                                     {% endif %}
 
                                 {%- when 'inventory_status' -%}
+                                    {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
                                     <div class="inventory__title">
 											<span id="Inventory-{{ section.id }}">
 												<span class="advantage__title">
@@ -136,12 +137,15 @@
 																</svg>
 
                                                         <span>	{{ 'products.product.quantity.in_stock' | t: quantity: product.selected_or_first_available_variant.inventory_quantity }}</span>
+                                                    {% comment %}
                                                     {% elsif product.selected_or_first_available_variant.inventory_quantity <= 0 %}
                                                         <span>	{{ 'products.product.quantity.out_of_stock' | t }}</span>
+                                                    {% endcomment %}
                                                     {% endif %}
 												</span>
 											</span>
                                     </div>
+                                    {% endif %}
 
                                 {%- when 'product-description' -%}
 
@@ -332,6 +336,7 @@
                                                 </div>
                                             {%- endif -%}
                                         </div>
+                                        {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
                                         <div class="inventory__title">
 											<span id="Inventory-{{ section.id }}">
 												<span class="advantage__title">
@@ -349,12 +354,15 @@
 																</svg>
 
                                                         <span>	{{ 'products.product.quantity.in_stock' | t: quantity: product.selected_or_first_available_variant.inventory_quantity }}</span>
+                                                    {% comment %}
                                                     {% elsif product.selected_or_first_available_variant.inventory_quantity <= 0 %}
                                                         <span>	{{ 'products.product.quantity.out_of_stock' | t }}</span>
+                                                    {% endcomment %}
                                                     {% endif %}
 												</span>
 											</span>
                                         </div>
+                                        {% endif %}
                                     </div>
                                     <div {{ block.shopify_attributes }} style="margin: 0">
                                         {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
@@ -466,149 +474,127 @@
                                             {%- endform -%}
                                         </product-form>
                                         <script>
-                                            document.addEventListener('DOMContentLoaded', function() {
-                                                const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
-                                                const premiumPackagingCheckbox = document.querySelector('input[name="packagingOption"][data-is-premium="true"]');
-                                                const messageTextarea = document.querySelector('#message-product-combined-listing-{{ section_id }}');
+                                            (function () {
+                                                // Section id is rewritten to `quickadd-{{ section.id }}` by quick-add.js
+                                                // when the section innerHTML is injected into the quick view modal,
+                                                // so scoping via this id works in both contexts.
+                                                const sectionId = '{{ section.id }}';
 
-                                                // Находим кнопку отправки сразу, если форма существует
-                                                const submitButton = productForm ? productForm.querySelector('button[type="submit"]') : null;
+                                                function init() {
+                                                    const scope = document.getElementById('ProductInfo-' + sectionId) || document;
+                                                    const productForm = scope.querySelector('form[data-type="add-to-cart-form"]');
+                                                    const premiumPackagingCheckbox = scope.querySelector('input[name="packagingOption"][data-is-premium="true"]');
+                                                    const messageTextarea = scope.querySelector('textarea[id^="message-product-combined-listing-"]');
+                                                    const submitButton = productForm ? productForm.querySelector('button[type="submit"]') : null;
 
-                                                if (productForm && submitButton) {
+                                                    if (!productForm || !submitButton) return;
 
-                                                    // Привязываем слушатель к кнопке, чтобы перехватить событие до стандартной отправки формы.
-                                                    submitButton.addEventListener('click', function(e) {
+                                                    submitButton.addEventListener('click', function (e) {
+                                                        if (!premiumPackagingCheckbox || !premiumPackagingCheckbox.checked) return;
 
-                                                        // Проверяем, выбрана ли подарочная упаковка (это условие для кастомной логики)
-                                                        if (premiumPackagingCheckbox && premiumPackagingCheckbox.checked) {
+                                                        e.preventDefault();
+                                                        e.stopPropagation();
+                                                        e.stopImmediatePropagation();
 
-                                                            // 1. ПОЛНОСТЬЮ ОТМЕНЯЕМ СТАНДАРТНУЮ ОТПРАВКУ
-                                                            e.preventDefault();
-                                                            e.stopPropagation();
-                                                            e.stopImmediatePropagation();
+                                                        const formData = new FormData(productForm);
+                                                        const mainProductVariantId = formData.get('id');
+                                                        const quantity = parseInt(formData.get('quantity') || 1, 10);
 
-                                                            const formData = new FormData(productForm);
-                                                            const mainProductVariantId = formData.get('id');
+                                                        const items = [{ id: mainProductVariantId, quantity: quantity }];
 
-                                                            // Получаем количество из формы (или по умолчанию 1)
-                                                            const quantity = formData.get('quantity') || 1;
-
-                                                            let items = [{
-                                                                id: mainProductVariantId,
-                                                                quantity: parseInt(quantity)
-                                                            }];
-
-                                                            // Добавляем подарочную упаковку как второй элемент, если ее ID существует
-                                                            const premiumVariantId = premiumPackagingCheckbox.dataset.variantId;
-                                                            if (premiumVariantId) {
-                                                                items.push({
-                                                                    id: premiumVariantId,
-                                                                    quantity: 1
-                                                                });
-                                                            }
-
-                                                            // Добавляем заметку о сообщении, если она есть
-                                                            if (messageTextarea && messageTextarea.value.trim() !== '') {
-                                                                items[0].properties = items[0].properties || {};
-                                                                items[0].properties['Message'] = messageTextarea.value.trim();
-                                                            }
-
-                                                            // UI Feedback
-                                                            const originalText = submitButton.innerHTML;
-                                                            submitButton.innerHTML = 'Adding...';
-                                                            submitButton.disabled = true;
-
-                                                            // 2. ОТПРАВЛЯЕМ AJAX-ЗАПРОС С ДВУМЯ ПОЗИЦИЯМИ
-                                                            fetch('/cart/add.js', {
-                                                                method: 'POST',
-                                                                headers: {
-                                                                    'Content-Type': 'application/json',
-                                                                },
-                                                                body: JSON.stringify({ items: items })
-                                                            })
-                                                                .then(response => response.json())
-                                                                .then(data => {
-                                                                    showSuccessMessage('Items added to cart successfully!');
-
-                                                                    // 1. Обновляем счетчик корзины в шапке
-                                                                    updateCartCount();
-
-                                                                    // 2. Находим экземпляр CartDrawer
-                                                                    const cartDrawerElement = document.querySelector('cart-drawer');
-
-                                                                    // 3. Вызываем метод renderContents() для обновления и открытия Drawer
-                                                                    if (cartDrawerElement && typeof cartDrawerElement.renderContents === 'function') {
-
-                                                                        // Получаем свежие данные корзины, необходимые для рендеринга.
-                                                                        // Запрос Shopify /cart/add.js возвращает объект корзины (parsedState)
-                                                                        // но для renderContents часто требуются секции.
-
-                                                                        // Оптимальный подход: Запросить секции корзины напрямую!
-
-                                                                        fetch(`?sections=${cartDrawerElement.getSectionsToRender().map(section => section.id).join(',')}`)
-                                                                            .then(sectionsResponse => sectionsResponse.json())
-                                                                            .then(sectionsData => {
-                                                                                const fullState = { sections: sectionsData };
-                                                                                cartDrawerElement.renderContents(fullState);
-                                                                            })
-                                                                            .catch(error => {
-                                                                                console.error('Error fetching cart sections:', error);
-                                                                                // Если запрос секций не удался, просто открываем пустой drawer
-                                                                                if (typeof cartDrawerElement.open === 'function') {
-                                                                                    cartDrawerElement.open();
-                                                                                }
-                                                                            });
-
-                                                                    } else {
-                                                                        // Если класс CartDrawer не найден или метод отсутствует,
-                                                                        // используем запасной вариант (старый Cart Drawer или Drawer с ошибкой)
-                                                                        console.warn('CartDrawer component or renderContents method not found.');
-                                                                    }
-                                                                })
-                                                                .catch(error => {
-                                                                    showErrorMessage('There was an error adding items to cart. Please try again.');
-                                                                    console.error('AJAX Error:', error);
-                                                                })
-                                                                .finally(() => {
-                                                                    submitButton.innerHTML = originalText;
-                                                                    submitButton.disabled = false;
-                                                                });
+                                                        if (messageTextarea && messageTextarea.value.trim() !== '') {
+                                                            items[0].properties = { Message: messageTextarea.value.trim() };
                                                         }
-                                                        // Если упаковка НЕ выбрана, код просто продолжает стандартную отправку формы.
+
+                                                        const premiumVariantId = premiumPackagingCheckbox.dataset.variantId;
+                                                        if (premiumVariantId) {
+                                                            items.push({ id: premiumVariantId, quantity: 1 });
+                                                        }
+
+                                                        const originalText = submitButton.innerHTML;
+                                                        submitButton.innerHTML = 'Adding...';
+                                                        submitButton.disabled = true;
+
+                                                        const quickAddModal = submitButton.closest('quick-add-modal');
+                                                        const cartDrawerElement = document.querySelector('cart-drawer');
+
+                                                        fetch('/cart/add.js', {
+                                                            method: 'POST',
+                                                            headers: { 'Content-Type': 'application/json' },
+                                                            body: JSON.stringify({ items: items })
+                                                        })
+                                                            .then(response => response.json())
+                                                            .then(() => {
+                                                                updateCartCount();
+
+                                                                if (!cartDrawerElement || typeof cartDrawerElement.renderContents !== 'function') {
+                                                                    if (quickAddModal) quickAddModal.hide(true);
+                                                                    return;
+                                                                }
+
+                                                                const sectionsParam = cartDrawerElement.getSectionsToRender().map(s => s.id).join(',');
+
+                                                                fetch(`${window.location.pathname}?sections=${sectionsParam}`)
+                                                                    .then(sectionsResponse => sectionsResponse.json())
+                                                                    .then(sectionsData => {
+                                                                        const fullState = { sections: sectionsData };
+
+                                                                        if (quickAddModal) {
+                                                                            document.body.addEventListener('modalClosed', () => {
+                                                                                setTimeout(() => cartDrawerElement.renderContents(fullState));
+                                                                            }, { once: true });
+                                                                            quickAddModal.hide(true);
+                                                                        } else {
+                                                                            cartDrawerElement.renderContents(fullState);
+                                                                        }
+                                                                    })
+                                                                    .catch(error => {
+                                                                        console.error('Error fetching cart sections:', error);
+                                                                        if (quickAddModal) quickAddModal.hide(true);
+                                                                        if (typeof cartDrawerElement.open === 'function') {
+                                                                            cartDrawerElement.open();
+                                                                        }
+                                                                    });
+                                                            })
+                                                            .catch(error => {
+                                                                showErrorMessage('There was an error adding items to cart. Please try again.');
+                                                                console.error('AJAX Error:', error);
+                                                            })
+                                                            .finally(() => {
+                                                                submitButton.innerHTML = originalText;
+                                                                submitButton.disabled = false;
+                                                            });
                                                     });
-                                                }
 
-                                                // --- Вспомогательные функции ---
+                                                    function showErrorMessage(message) {
+                                                        const errorWrapper = scope.querySelector('.product-form__error-message-wrapper');
+                                                        const errorMessage = scope.querySelector('.product-form__error-message');
+                                                        if (errorWrapper && errorMessage) {
+                                                            errorMessage.textContent = message;
+                                                            errorWrapper.hidden = false;
+                                                        } else {
+                                                            console.error(message);
+                                                        }
+                                                    }
 
-                                                function showSuccessMessage(message) {
-                                                    // Здесь можно реализовать показ всплывающего сообщения об успехе
-                                                    console.log(message);
-                                                }
-
-                                                function showErrorMessage(message) {
-                                                    const errorWrapper = document.querySelector('.product-form__error-message-wrapper');
-                                                    const errorMessage = document.querySelector('.product-form__error-message');
-                                                    if (errorWrapper && errorMessage) {
-                                                        errorMessage.textContent = message;
-                                                        errorWrapper.hidden = false;
-                                                    } else {
-                                                        console.error(message);
+                                                    function updateCartCount() {
+                                                        fetch('/cart.js')
+                                                            .then(response => response.json())
+                                                            .then(cart => {
+                                                                document.querySelectorAll('.cart-count-bubble, .cart-icon-bubble').forEach(el => {
+                                                                    el.textContent = cart.item_count;
+                                                                });
+                                                            })
+                                                            .catch(error => console.error('Error fetching cart count:', error));
                                                     }
                                                 }
 
-                                                function updateCartCount() {
-                                                    // Обновляет счетчик корзины в шапке
-                                                    fetch('/cart.js')
-                                                        .then(response => response.json())
-                                                        .then(cart => {
-                                                            const cartCountElements = document.querySelectorAll('.cart-count-bubble, .cart-icon-bubble');
-                                                            cartCountElements.forEach(element => {
-                                                                element.textContent = cart.item_count;
-                                                            });
-                                                        })
-                                                        .catch(error => console.error('Error fetching cart count:', error));
+                                                if (document.readyState === 'loading') {
+                                                    document.addEventListener('DOMContentLoaded', init);
+                                                } else {
+                                                    init();
                                                 }
-                                            });
+                                            })();
                                         </script>
                                         {%  comment %}
                                        {%  endcomment %}

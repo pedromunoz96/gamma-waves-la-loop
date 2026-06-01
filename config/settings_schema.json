@@ -1016,6 +1016,37 @@
         ],
         "default": "background-5",
         "label": "t:sections.split_screen_slideshow.blocks.settings.color_scheme.label"
+      },
+      {
+        "type": "header",
+        "content": "Free Shipping Bar"
+      },
+      {
+        "type": "number",
+        "id": "free_shipping_threshold",
+        "label": "Free shipping threshold",
+        "info": "Minimum order amount for free shipping (e.g. 150). Set to 0 to hide the bar.",
+        "default": 0
+      },
+      {
+        "type": "color",
+        "id": "free_shipping_text_color",
+        "label": "Text color",
+        "default": "#121212"
+      },
+      {
+        "type": "color",
+        "id": "free_shipping_track_color",
+        "label": "Bar background color",
+        "info": "Color of the empty progress track.",
+        "default": "#e0e0e0"
+      },
+      {
+        "type": "color",
+        "id": "free_shipping_fill_color",
+        "label": "Bar progress color",
+        "info": "Color of the filled progress bar.",
+        "default": "#121212"
       }
     ]
   },
@@ -1060,6 +1091,151 @@
         "id": "open_new_tab",
         "default": true,
         "label": "t:settings_schema.links.settings.open_new_tab.label"
+      }
+    ]
+  },
+  {
+    "name": "Cart Upsell",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Upsell drawer cart"
+      },
+      {
+        "type": "text",
+        "id": "cart_upsell_title_text",
+        "label": "Heading text",
+        "default": "Others also bought:",
+        "info": "Shown above the upsell carousel. Leave blank to hide."
+      },
+      {
+        "type": "select",
+        "id": "cart_upsell_variant_style",
+        "label": "Variant style",
+        "options": [
+          { "value": "dropdowns", "label": "Dropdowns" },
+          { "value": "buttons",   "label": "Buttons"   }
+        ],
+        "default": "buttons"
+      },
+      {
+        "type": "range",
+        "id": "cart_upsell_cards_per_slide",
+        "label": "Cards per slide",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 1,
+        "info": "Number of upsell cards visible at once. Tip: 1 leaves space for a peek of the next card; 2–3 split the drawer width evenly."
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_upsell_show_price",
+        "label": "Show price",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_upsell_show_price_in_button",
+        "label": "Show price in button",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_upsell_show_arrows",
+        "label": "Active carousel arrows",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_arrow_color",
+        "label": "Arrow icon color",
+        "default": "#000000",
+        "visible_if": "{{ settings.cart_upsell_show_arrows == true }}"
+      },
+      {
+        "type": "header",
+        "content": "Upsell card style"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_card_bg",
+        "label": "Card background",
+        "default": "#F7F7F7"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_title_color",
+        "label": "Product name color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_price_color",
+        "label": "Price color",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Upsell button style"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_btn_bg",
+        "label": "Button background",
+        "default": "#E8E5E0"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_btn_text_color",
+        "label": "Button text color",
+        "default": "#000000"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_upsell_btn_border",
+        "label": "Show border",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "cart_upsell_btn_border_width",
+        "label": "Border width",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "unit": "px",
+        "default": 1,
+        "visible_if": "{{ settings.cart_upsell_btn_border == true }}"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_btn_border_color",
+        "label": "Border color",
+        "default": "#000000",
+        "visible_if": "{{ settings.cart_upsell_btn_border == true }}"
+      },
+      {
+        "type": "range",
+        "id": "cart_upsell_btn_border_radius",
+        "label": "Border radius",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_btn_hover_bg",
+        "label": "Hover background",
+        "default": "#D5D2CD"
+      },
+      {
+        "type": "color",
+        "id": "cart_upsell_btn_hover_text_color",
+        "label": "Hover text color",
+        "default": "#000000"
       }
     ]
   }

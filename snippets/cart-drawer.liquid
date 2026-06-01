@@ -41,6 +41,10 @@
 					{% render 'icon-close' %}
 				</button>
 			</div>
+
+			{%- comment -%} Free shipping progress bar (server-rendered, no JS) {%- endcomment -%}
+			{%- render 'free-shipping-bar' -%}
+
 			{%- if cart == empty -%}
 				<div class="drawer__inner-empty">
 					{% render 'icon-account-order-none' %}
@@ -275,6 +279,9 @@
 					<div id="CartDrawer-CartErrors" role="alert"></div>
 				</form>
 			</cart-drawer-items>
+
+			{%- render 'mp-cart-upsell' -%}
+
 			<div class="drawer__footer">
 				<div class="drawer__footer--shadow"></div>
 				<div class="drawer__footer-container cart-drawer-container">
@@ -387,6 +394,21 @@
 		</div>
 	</div>
 </cart-drawer>
+
+{%- comment -%}
+  mp-cart-upsell dependencies, loaded here (outside <cart-drawer>) so they
+  survive the #CartDrawer innerHTML morph and are available on every page
+  that renders the cart drawer.
+
+  - product-form.js: registers the <product-form> custom element. The upsell
+    cards wrap their add-to-cart form in <product-form>; without this script
+    the form submits as a full POST instead of AJAX. The theme only loads it
+    from product/featured-product/product-card snippets, so we re-include it
+    here. Custom elements are idempotent — defining is a no-op if already done.
+  - mp-cart-upsell.js: variant/price wiring and carousel arrow controls.
+{%- endcomment -%}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'mp-cart-upsell.js' | asset_url }}" defer="defer"></script>
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {

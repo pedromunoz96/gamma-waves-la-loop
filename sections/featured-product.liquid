@@ -195,7 +195,8 @@
 										{{- product.vendor -}}
 									</p>
 								{%- when 'inventory_status' -%}
-									<div class='inventory__title'>
+									{% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
+										<div class='inventory__title'>
 										<span id='Inventory-{{ section.id }}'>
 											<span class='advantage__title'>
 												{% if product.selected_or_first_available_variant.inventory_quantity
@@ -241,16 +242,19 @@
 																quantity: product.selected_or_first_available_variant.inventory_quantity
 														-}}
 													</span>
+												{% comment %}
 												{% elsif product.selected_or_first_available_variant.inventory_quantity
 														<= 0
 												%}
 													<span>
 														{{ 'products.product.quantity.out_of_stock' | t -}}
 													</span>
+												{% endcomment %}
 												{% endif %}
 											</span>
 										</span>
 									</div>
+									{% endif %}
 								{%- when 'price' -%}
 									<div
 										class='no-js-hidden price-wrapper'

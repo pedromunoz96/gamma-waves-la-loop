@@ -67,6 +67,16 @@
         "margin_bottom": 0
       }
     },
+    "announcement_bar_qPWihX": {
+      "type": "announcement-bar",
+      "custom_css": [],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "height": 45,
+        "color_scheme": "dark",
+        "text": "<p><strong>Free Shipping on US Orders over $150 </strong><a href=\"/collections/loopers-favorites\" title=\"Best Sellers\">Shop Now</a></p>"
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -173,6 +183,7 @@
     }
   },
   "order": [
+    "announcement_bar_qPWihX",
     "logo-slideshow",
     "header"
   ]

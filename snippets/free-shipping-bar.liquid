@@ -1,0 +1,128 @@
+{%- comment -%}
+  ============================================
+  SNIPPET: free-shipping-bar
+  PURPOSE: Displays a progress bar in the cart drawer showing how much more
+           the customer needs to spend to unlock free shipping.
+           Controlled via theme settings > Cart > Free Shipping Bar.
+           Renders nothing if threshold is 0 or not set.
+  ADDED: 2026-06-01 by MeshPlanet
+  ============================================
+{%- endcomment -%}
+
+{%- liquid
+  assign threshold = settings.free_shipping_threshold | default: 0
+
+  # Visibility filters. The bar renders only when ALL active filters pass.
+  assign should_render = true
+
+  # A threshold must be configured (set to 0 to hide the bar)
+  if threshold == 0
+    assign should_render = false
+  endif
+
+  # Hide when the cart is empty (nothing to progress towards)
+  if cart == empty
+    assign should_render = false
+  endif
+
+  # B2B filter: hide for logged-in B2B (company) customers
+  if customer.b2b?
+    assign should_render = false
+  endif
+
+  # Country filter: only show for customers in the United States
+  unless localization.country.iso_code == 'US'
+    assign should_render = false
+  endunless
+
+  # Design mode override: always show inside the theme editor (as long as a
+  # threshold is configured) so it can be styled regardless of B2B/country/
+  # empty cart.
+  if request.design_mode and threshold > 0
+    assign should_render = true
+  endif
+
+  # Progress calculation (only needed when the bar is rendered)
+  if should_render
+    assign threshold_cents = threshold | times: 100
+    assign cart_total = cart.total_price
+    assign remaining_cents = threshold_cents | minus: cart_total
+
+    if remaining_cents <= 0
+      assign progress_pct = 100
+      assign shipping_unlocked = true
+    else
+      assign progress_pct = cart_total | times: 100 | divided_by: threshold_cents
+      assign shipping_unlocked = false
+      # strip_html removes the <span class="money"> wrapper some shops add to
+      # money output, which the 't' filter would otherwise escape and show as text
+      assign remaining_amount = remaining_cents | money_without_trailing_zeros | strip_html
+    endif
+  endif
+-%}
+
+{%- if should_render -%}
+  <div
+    class="free-shipping-bar"
+    style="
+      --fs-text-color: {{ settings.free_shipping_text_color }};
+      --fs-track-color: {{ settings.free_shipping_track_color }};
+      --fs-fill-color: {{ settings.free_shipping_fill_color }};
+    "
+  >
+    <p class="free-shipping-bar__message">
+      {%- if shipping_unlocked -%}
+        {{ 'content.free_shipping_unlocked' | t }}
+      {%- else -%}
+        {{ 'content.free_shipping_progress' | t: amount: remaining_amount }}
+      {%- endif -%}
+    </p>
+
+    <div
+      class="free-shipping-bar__track"
+      role="progressbar"
+      aria-valuenow="{{ progress_pct }}"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+      <div
+        class="free-shipping-bar__fill{% if shipping_unlocked %} free-shipping-bar__fill--complete{% endif %}"
+        style="--shipping-progress: {{ progress_pct }}%"
+      ></div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .free-shipping-bar {
+    padding: 20px 20px 0 20px;
+  }
+
+  .free-shipping-bar__message {
+    margin: 0 0 8px;
+    font-family: var(--font-body--family);
+    font-style: var(--font-body--style);
+    font-size: 11px;
+    font-weight: 400;
+    /* Falls back to the theme foreground color if no setting is configured */
+    color: var(--fs-text-color, var(--color-foreground));
+  }
+
+  .free-shipping-bar__track {
+    width: 100%;
+    height: 4px;
+    background-color: var(--fs-track-color, rgb(var(--color-foreground-rgb) / 0.12));
+    overflow: hidden;
+  }
+
+  .free-shipping-bar__fill {
+    height: 100%;
+    width: var(--shipping-progress, 0%);
+    background-color: var(--fs-fill-color, var(--color-foreground));
+    transition: width 0.4s ease;
+  }
+
+  .free-shipping-bar__fill--complete {
+    background-color: var(--fs-fill-color, var(--color-foreground));
+  }
+{% endstylesheet %}

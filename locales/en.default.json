@@ -575,5 +575,13 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "cart_upsell": {
+    "title": "Others also bought:",
+    "select_option": "Select {{ option }}"
+  },
+  "content": {
+    "free_shipping_progress": "You're {{ amount }} away from free shipping!",
+    "free_shipping_unlocked": "You've unlocked free shipping!"
   }
 }

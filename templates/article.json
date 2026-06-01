@@ -69,62 +69,39 @@
         "margin_bottom": 110
       }
     },
-    "instagram-collage": {
-      "type": "instagram-collage",
+    "1777417447782e5e26": {
+      "type": "apps",
       "blocks": {
-        "card_1": {
-          "type": "card",
+        "instafeed_app_block_Qz7VYY": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "button_link": ""
-          }
-        },
-        "card_2": {
-          "type": "card",
-          "settings": {
-            "button_link": ""
-          }
-        },
-        "card_3": {
-          "type": "card",
-          "settings": {
-            "button_link": ""
-          }
-        },
-        "card_4": {
-          "type": "card-text",
-          "settings": {
-            "card-text_description": "<p>A short introduction to your <em>social media</em></p>",
-            "heading_size": "medium",
-            "vertical_settings": "end",
-            "horizontal_settings": "left",
-            "color_scheme_2": "background-5"
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": "<div class=\"section-instagram-collage__text-block\">\n\t\t\t<div class=\"button-container\">\n\t\t\t\t<a type=\"button\" class=\"button--simple-move button button--with-underline\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"GET INSPIRED WITH LALOOP\">\n\t\t\t\t\t<span> GET INSPIRED WITH LALOOP</span>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<div class=\"header-container\">\n\t\t\t\t<a type=\"button\" class=\"full-unstyled-link h2\" href=\"https://www.instagram.com/laloop_official\" aria-label=\"@laloop_official\"><p>@laloop_official</p></a>\n\t\t\t</div>\n\t\t\t<div class=\"text-container\">\n\t\t\t\t<p>FOLLOW US ON INSTAGRAM</p>\n\t\t\t</div>\n\t\t</div>"
           }
         }
       },
       "block_order": [
-        "card_1",
-        "card_2",
-        "card_3",
-        "card_4"
+        "instafeed_app_block_Qz7VYY"
       ],
       "settings": {
-        "color_scheme": "background-2",
-        "title": "<p><em>@mon</em>aco</p>",
-        "text": "Follow Us On Instagram",
-        "overlay_enable": false,
-        "overlay_opacity": 10,
-        "button_text": "get inspired with @monaco",
-        "button_link": "",
-        "padding_top": 130,
-        "padding_bottom": 300,
-        "margin_top": 110,
-        "margin_bottom": 0
+        "include_margins": true
       }
     }
   },
   "order": [
     "main",
     "featured_blog",
-    "instagram-collage"
+    "1777417447782e5e26"
   ]
 }

@@ -574,5 +574,9 @@
     "language_label": "Idioma",
     "update_language": "Actualizar idioma",
     "update_country": "Actualizar país\/región"
+  },
+  "content": {
+    "free_shipping_progress": "¡Te faltan {{ amount }} para el envío gratis!",
+    "free_shipping_unlocked": "¡Has desbloqueado el envío gratis!"
   }
 }
